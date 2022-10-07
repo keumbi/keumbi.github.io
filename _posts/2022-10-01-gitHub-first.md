@@ -1,11 +1,11 @@
 ---
 title: 블로그 시작!!
-author: Keumbi
+author: keumbi
 date: 2022-10-01 21:20:00 +0900
 categories: [Blogging, Tutorial]
 tags: [github pages, error, setup]
 ---
-<iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/G6cBtS3yWq7nyzNcl4/video" width="480"></iframe>
+<iframe allow="fullscreen" frameBorder="0" height="270" src="https://giphy.com/embed/G6cBtS3yWq7nyzNcl4/video" width="100%"></iframe>
 
 ## Overview
 노션에 정리하던 내용들을 우선 블로그 페이지로 이사하려고 합니다.
@@ -81,4 +81,4 @@ test
 
 [PMD](https://velog.io/@been/IT%EA%B8%B0%EC%82%AC%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EA%B6%8C%EC%9E%A5%ED%95%98%EB%8A%94-Java-%EC%BD%94%EB%93%9C-%ED%92%88%EC%A7%88-%EB%8F%84%EA%B5%AC)
 
-[글 쓸 시간을 따로 마련하](https://wormwlrm.github.io/2022/08/20/Personal-Branding-from-Technical-Writing.html)
+[글 쓸 시간을 따로 마련하기](https://wormwlrm.github.io/2022/08/20/Personal-Branding-from-Technical-Writing.html)
