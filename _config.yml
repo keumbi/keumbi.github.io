@@ -21,12 +21,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: TIL                          # the main title
+title: Dive into learning     # the main title
 
-tagline: Today I leanrnt  # it will display as the sub-title
+tagline: Right Now, Wrong Then...   # it will display as the sub-title
 
-description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+description: 백엔드 개발자로 다음 커리어를 준비하고 있는 학습일지 블로그입니다. 맞고 틀린지에 대한 검증이 부족하니 혹시 틀린 부분을 발견하신다면, 댓글이나 하단 메일로 전달해 주시면 감사하겠습니다.    # used by seo meta and the atom feed
+
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://keumbi.github.io'
