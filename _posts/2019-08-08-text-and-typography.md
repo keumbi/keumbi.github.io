@@ -1,7 +1,7 @@
 ---
 title: Text and Typography
-author: cotes
-date: 2019-08-08 11:33:00 +0800
+author: keumbi
+date: 2022-10-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
 math: true
@@ -13,22 +13,42 @@ image:
   alt: how to use...
 ---
 
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
+## 마크다운 사용법
+이 페이지는 내가 사용한 블로그 테마 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork),의 Text and Typography를 기본으로 작성했다. 블로그 작성 시 제목 규칙, 리스트 샘플을 확인할 수 있다.
 
 
-## Titles
+## 제목(Titles)
 ---
 # H1 - heading
+## H2 - heading
+### H3 - heading
+#### H4 - heading
 
+<h1 data-toc-skip>H1 - heading</h1>
 <h2 data-toc-skip>H2 - heading</h2>
-
 <h3 data-toc-skip>H3 - heading</h3>
-
-<h4>H4 - heading</h4>
+<h4> H4 - heading</h4>
 ---
 <br>
 
-## Paragraph
+```markdown
+---
+<hr> 요소는 이야기 장면 전환, 구획 내 주제 변경 등,
+문단 레벨 요소에서 주제의 분리를 나타냅니다.
+---
+# H1 - heading
+## H2 - heading
+### H3 - heading
+#### H4 - heading
+
+<h1 data-toc-skip>H1 - heading</h1>
+<h2 data-toc-skip>H2 - heading</h2>
+<h3 data-toc-skip>H3 - heading</h3>
+<h4>H4 - heading</h4>
+---
+```
+
+## 문단(Paragraph)
 
 I wandered lonely as a cloud
 
@@ -42,21 +62,42 @@ Beside the lake, beneath the trees,
 
 Fluttering and dancing in the breeze.
 
-## Lists
+## 목록
 
-### Ordered list
+### 정렬된 목록(Ordered list)
 
 1. Firstly
 2. Secondly
 3. Thirdly
 
-### Unordered list
+```markdown
+1. Firstly
+2. Secondly
+3. Thirdly
+```
+
+### 정렬되지 않은 목록(Unordered list)
 
 - Chapter
   - Section
     - Paragraph
 
-### Task list
+```markdown
+- Chapter
+  - Section
+    - Paragraph
+```
+
+### 작업 목록(Task list)
+
+- [ ] 할일 목록
+- [x] 완료
+- [ ] Defeat COVID-19
+  - [x] Vaccine production
+  - [ ] Economic recovery
+  - [ ] People smile again
+
+```markdown
 
 - [ ] TODO
 - [x] Completed
@@ -65,7 +106,9 @@ Fluttering and dancing in the breeze.
   - [ ] Economic recovery
   - [ ] People smile again
 
-### Description list
+```
+
+### 설명 목록(Description list)
 
 Sun
 : the star around which the earth orbits
@@ -73,11 +116,25 @@ Sun
 Moon
 : the natural satellite of the earth, visible by reflected light from the sun
 
-## Block Quote
+```markdown
 
+Sun
+: the star around which the earth orbits
+
+Moon
+: the natural satellite of the earth, visible by reflected light from the sun
+
+```
+
+## 인용 블록(Block Quote)
+
+> _인용문_ 을 사용할 때의 예시 입니다.
+
+```markdown
 > This line shows the _block quote_.
+```
 
-## Prompts
+## 프롬프트(Prompts)
 
 > An example showing the `tip` type prompt.
 {: .prompt-tip }
@@ -91,7 +148,22 @@ Moon
 > An example showing the `danger` type prompt.
 {: .prompt-danger }
 
-## Tables
+
+```markdown
+> 이 예제는 `팁` 아이콘을 사용한 프롬프트 입니다.
+{: .prompt-tip }
+
+> 이 예제는 `정보` 아이콘을 사용한 프롬프트 입니다.
+{: .prompt-info }
+
+> 이 예제는 `경고` 아이콘을 사용한 프롬프트 입니다.
+{: .prompt-warning }
+
+> 이 예제는 `위험` 아이콘을 사용한 프롬프트 입니다.
+{: .prompt-danger }
+```
+
+## 테이블(Tables)
 
 | Company                      | Contact          | Country |
 |:-----------------------------|:-----------------|--------:|
@@ -99,20 +171,42 @@ Moon
 | Island Trading               | Helen Bennett    | UK      |
 | Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
 
+```markdown
+
+| Company                      | Contact          | Country |
+|:-----------------------------|:-----------------|--------:|
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    | UK      |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+
+```
+
 ## Links
 
 <http://127.0.0.1:4000>
 
-## Footnote
+[루비 설정 오류 해결](https://jojoldu.tistory.com/288)
+
+```markdown
+<http://127.0.0.1:4000>
+[루비 설정 오류 해결](https://jojoldu.tistory.com/288)
+```
+
+## 각주(Footnote)
 
 Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
 
-## Images
+## 이미지
 
 - Default (with caption)
 
 ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" }
 _Full screen width and center alignment_
+
+```markdown
+![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" }
+_Full screen width and center alignment_
+```
 
 <br>
 
@@ -120,27 +214,40 @@ _Full screen width and center alignment_
 
 ![Window shadow](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: .shadow width="1548" height="864" style="max-width: 90%" }
 _shadow effect (visible in light mode)_
-
+```markdown
+![Window shadow](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: .shadow width="1548" height="864" style="max-width: 90%" }
+_shadow effect (visible in light mode)_
+```
 <br>
 
 - Left aligned
 
 ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" style="max-width: 70%" .normal}
-
+```markdown
+![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" style="max-width: 70%" .normal}
+```
 <br>
 
 - Float to left
 
   ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" style="max-width: 200px" .left}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
-
+```markdown
+이미지 왼쪽 정렬
+ ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" style="max-width: 200px" .left}
+  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
+```
 <br>
 
 - Float to right
 
   ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" style="max-width: 200px" .right}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
-
+```markdown
+이미지 오른쪽 정렬
+![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" style="max-width: 200px" .right}
+"A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
+```
 <br>
 
 ## Mermaid SVG
@@ -166,10 +273,16 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 ## Inline code
 
 This is an example of `Inline Code`.
+```markdown
+This is an example of `Inline Code`.
+```
 
 ## Filepath
 
 Here is the `/path/to/the/file.extend`{: .filepath}.
+```markdown
+Here is the `/path/to/the/file.extend`{: .filepath}.
+```
 
 ## Code block
 
@@ -207,7 +320,7 @@ fi;
 ```
 {: file='_sass/jekyll-theme-chirpy.scss'}
 
-## Reverse Footnote
+## 각주 연결(Reverse Footnote)
 
 [^footnote]: The footnote source
 [^fn-nth-2]: The 2nd footnote source

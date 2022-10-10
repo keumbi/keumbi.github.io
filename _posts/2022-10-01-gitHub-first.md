@@ -4,16 +4,11 @@ author: keumbi
 date: 2022-10-01 21:20:00 +0900
 categories: [Blogging, Tutorial]
 tags: [github pages, error, setup]
-image:
-path: https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp
-width: 500
-height: 500
-alt: Start!
 
 ---
 
 
-
+![Window shadow](https://media4.giphy.com/media/1SzIPkhn8EOK99F0vj/giphy.gif){: .shadow width="600" height="338" style="max-width: 80%" }
 
 ## Overview
 노션에 정리하던 내용들을 우선 블로그 페이지로 이사하려고 합니다.
@@ -25,7 +20,7 @@ bundle exec jekyll serve
 ```
 
 정상적으로 확인된다면 http://127.0.0.1:4000/ 또는 http://localhost:4000/으로 접속하여 포스팅에 문제가 없는지 확인할 수 있다.
-포스팅 내용 수정시 local jekyll 서버 재시작 필요 없지만, _config.yml 설정 파일 수정한 경우는 재시작 필요 ```Ctrl+c``` 눌러서 서버를 중지하고, ```bundle exec jekyll serve``` 명령어 다시 입력해서 재시작!! 원하는데로 수정 완료 됐다면, add, commit and push~
+포스팅 내용 수정시 local jekyll 서버 재시작 필요 없지만, _config.yml 설정 파일 수정한 경우는 재시작 필요 `Ctrl+c` 눌러서 서버를 중지하고, `bundle exec jekyll serve` 명령어 다시 입력해서 재시작!! 원하는데로 수정 완료 됐다면, add, commit and push~
 
 
 ## Jekyll 4.2.0 Please append --trace to the serve command

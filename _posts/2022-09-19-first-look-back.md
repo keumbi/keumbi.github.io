@@ -4,9 +4,10 @@ author: keumbi
 date: 2022-09-19 21:20:00 +0900
 categories: [Blogging, Look back]
 tags: [look back, first, code states]
+pin: true
 ---
 
-![Window shadow](https://i.giphy.com/media/eoxomXXVL2S0E/giphy.webp){: .shadow width="320" height="240" style="max-width: 70%" }
+![Window shadow](https://i.giphy.com/media/eoxomXXVL2S0E/giphy.webp){: .shadow width="420" height="315" style="max-width: 80%" }
 _Great job!!_
 
 
