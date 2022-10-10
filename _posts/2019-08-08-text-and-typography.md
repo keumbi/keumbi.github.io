@@ -131,23 +131,22 @@ Moon
 > _인용문_ 을 사용할 때의 예시 입니다.
 
 ```markdown
-> This line shows the _block quote_.
+> _인용문_ 을 사용할 때의 예시 입니다.
 ```
 
 ## 프롬프트(Prompts)
 
-> An example showing the `tip` type prompt.
+> 이 예제는 `팁` 아이콘을 사용한 프롬프트 입니다.
 {: .prompt-tip }
 
-> An example showing the `info` type prompt.
+> 이 예제는 `정보` 아이콘을 사용한 프롬프트 입니다.
 {: .prompt-info }
 
-> An example showing the `warning` type prompt.
+> 이 예제는 `경고` 아이콘을 사용한 프롬프트 입니다.
 {: .prompt-warning }
 
-> An example showing the `danger` type prompt.
+> 이 예제는 `위험` 아이콘을 사용한 프롬프트 입니다.
 {: .prompt-danger }
-
 
 ```markdown
 > 이 예제는 `팁` 아이콘을 사용한 프롬프트 입니다.
@@ -185,23 +184,32 @@ Moon
 
 <http://127.0.0.1:4000>
 
-[루비 설정 오류 해결](https://jojoldu.tistory.com/288)
+[깃허브 블로그 페이지 이동](https://keumbi.github.io/)
+
+[깃허브 블로그 페이지 이동](https://keumbi.github.io/){:target="_blank"}
+_새창으로 링크 열기 {} 사이에 html attribute 넣어 사용 가능_
 
 ```markdown
 <http://127.0.0.1:4000>
-[루비 설정 오류 해결](https://jojoldu.tistory.com/288)
+[깃허브 블로그 페이지 이동](https://keumbi.github.io/)
+<!-- 새창으로 링크 열기 -->
+[깃허브 블로그 페이지 이동](https://keumbi.github.io/){:target="_blank"}
 ```
 
 ## 각주(Footnote)
 
-Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
+옆에 훅을 클릭 시 하단 각주로으로 이동합니다.[^footnote], 또 다른 각주 예제2[^fn-nth-2].
+
+```markdown
+옆에 훅을 클릭 시 하단 각주로으로 이동합니다.[^footnote], 또 다른 각주 예제2[^fn-nth-2].
+```
 
 ## 이미지
 
-- Default (with caption)
+- 기본 (설명과 함께)
 
 ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" }
-_Full screen width and center alignment_
+_전체 영역 넓비에 가득 차고, 가운데 정렬인 이미지_
 
 ```markdown
 ![Desktop View](https://i.giphy.com/media/QJvwBSGaoc4eI/giphy.webp){: width="972" height="589" }
@@ -324,3 +332,7 @@ fi;
 
 [^footnote]: The footnote source
 [^fn-nth-2]: The 2nd footnote source
+```markdown
+[^footnote]: 각주에 대한 설명
+[^fn-nth-2]: 각주 예제2 설명
+```
