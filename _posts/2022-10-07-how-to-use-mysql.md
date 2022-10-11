@@ -1,36 +1,33 @@
 ---
-title: 블로그 시작!!
+title: 데이터
 author: keumbi
-date: 2022-10-01 21:20:00 +0900
+date: 2022-10-07 21:20:00 +0900
 categories: [Blogging, Tutorial]
 tags: [github pages, error, setup]
-
 ---
-
-
-![Window shadow](https://media4.giphy.com/media/1SzIPkhn8EOK99F0vj/giphy.gif){: .shadow width="600" height="338" style="max-width: 80%" }
+<iframe allow="fullscreen" frameBorder="0" src="https://giphy.com/embed/G6cBtS3yWq7nyzNcl4/video" height="300px" width="100%"></iframe>
 
 ## Overview
 노션에 정리하던 내용들을 우선 블로그 페이지로 이사하려고 합니다.
 
-## GitHub page 수정 확인 방법
+## 터미널에서 MySQL 시작하기
 git clone 경로(폴더) 이동 후 서버 시작하는 명령어 입력
 ```
-bundle exec jekyll serve
+brew services restart mysql
 ```
 
 정상적으로 확인된다면 http://127.0.0.1:4000/ 또는 http://localhost:4000/으로 접속하여 포스팅에 문제가 없는지 확인할 수 있다.
-포스팅 내용 수정시 local jekyll 서버 재시작 필요 없지만, _config.yml 설정 파일 수정한 경우는 재시작 필요 `Ctrl+c` 눌러서 서버를 중지하고, `bundle exec jekyll serve` 명령어 다시 입력해서 재시작!! 원하는데로 수정 완료 됐다면, add, commit and push~
+포스팅 내용 수정시 local jekyll 서버 재시작 필요 없지만, _config.yml 설정 파일 수정한 경우는 재시작 필요 ```Ctrl+c``` 눌러서 서버를 중지하고, ```bundle exec jekyll serve``` 명령어 다시 입력해서 재시작!! 원하는데로 수정 완료 됐다면, add, commit and push~
 
-
-## Jekyll 4.2.0 Please append --trace to the serve command
+## 루트로 이동
 ```
-bundle exec jekyll serve --trace
+mysql -u root
 ```
+UPDATE content SET content.body = 'database is vary easy' WHERE  content.title = 'database sprint';
+UPDATE content SET content.body = 'database is very easy' WHERE content.title = 'database sprint';
+## 끝내기
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-
-## Could not find gem 'webric x64-mingw32'
-설치
 ```
 gem install webrick
 ```
@@ -46,6 +43,10 @@ jekyll build
 
 <!--git checkout -b bugFix-->
 
+
+```text
+test
+```
 <!--
 블로그 마음 가짐
 글 쓰기 전
@@ -82,4 +83,4 @@ jekyll build
 
 [PMD](https://velog.io/@been/IT%EA%B8%B0%EC%82%AC%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EA%B6%8C%EC%9E%A5%ED%95%98%EB%8A%94-Java-%EC%BD%94%EB%93%9C-%ED%92%88%EC%A7%88-%EB%8F%84%EA%B5%AC)
 
-[글 쓸 시간을 따로 마련하기](https://wormwlrm.github.io/2022/08/20/Personal-Branding-from-Technical-Writing.html)
+[글 쓸 시간을 따로 마련하](https://wormwlrm.github.io/2022/08/20/Personal-Branding-from-Technical-Writing.html)
