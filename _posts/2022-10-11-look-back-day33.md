@@ -1,14 +1,10 @@
 ---
-title: Spring Framework의 특징
+title: Section2, Week9, Day 33
 author: keumbi
 date: 2022-10-01 21:20:00 +0900
 categories: [Blogging, Look back]
-tags: [github pages, error, setup]
-image:
-path: /assets/img/img_spring_framework.png
-width: 800
-height: 500
-alt: how to use...
+tags: [github pages, week9, spring framework, code states ]
+
 ---
 
 ## Daily to-do list
@@ -59,11 +55,6 @@ overflow가 발생한다면 다시 처음부터 숫자 시작하나요?
 
 A. [What happens when auto_increment on integer column reaches the max_value in databases?](https://stackoverflow.com/questions/2615417/what-happens-when-auto-increment-on-integer-column-reaches-the-max-value-in-data)
 
-**SQL Reference**
-
-[What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF Example](https://www.guru99.com/database-normalization.html)
-
-[Database Normalization](https://www.w3schools.in/dbms/database-normalization)
 
 >스프링 프레임웍 객체지향을 잘 사용할 수 있게 만들어 주는 툴, 단순하게 기본적으로 제공된 것 만으로 구성, 종속적이지 않다. 좋은 설계 의존하는 객체가 무엇인지 몰라도 되는 것, 어떤 객체에 의존하든지 (인터페이스로 구현하면 됨)
 프로젝트 안에 다양한 객체들이 서로 의존하고 있다.
@@ -72,7 +63,6 @@ A. [What happens when auto_increment on integer column reaches the max_value in 
 왜 사용하는지 위주로 학습하기!! 핵심 개념 나중에 다시 반복해서 보기 (이틀로 DI 이해하기 어렵다) 실습을 거쳐야 필요성을 느낄 수 있음 완벽히 이해 어렵고 왜 사용하는지!!
 > \
 _위 내용은 짧은 시간에 지나가면 들었던 내용이라 틀린 내용일 수 있습니다. 혹시라도 잘못된 부분을 아신다면, 답글이나 메일로 말씀해 주신다면 Thx :)_
-
 
 
 ## Overview
@@ -85,14 +75,14 @@ Java 기반의 웹 애플리케이션을 만드는 다양한 기술들이 존재
 ## 실습 환경 구성
 실습 환경은 다음의 요구 조건이 필요합니다.
 
-- 여러분의 PC에 JDK-11이 설치되어 있어야 합니다.
-- 여러분의 환경 변수에 JAVA_HOME 설정이 되어 있어야 합니다.
-- 여러분의 PC에 IntelliJ Community Edition이 설치되어 있어야 합니다.
+- PC에 JDK-11이 설치되어 있어야 합니다.
+- 환경 변수에 JAVA_HOME 설정이 되어 있어야 합니다.
+- PC에 IntelliJ Community Edition이 설치되어 있어야 합니다.
 
 
 -  Spring Initializr [https://start.spring.io/](https://start.spring.io/) 공식 사이트로 이동합니다. Spring Initializr 공식 사이트에서는 여러분이 원하는 Spring Boot 실행 환경과 필요한 모듈을 손쉽게 포함하는 템플릿 프로젝트를 생성해줍니다.
 
-![Window shadow](/assets/img/spring-framework.png){: .shadow width="420" height="315" style="max-width: 80%" }
+![Window shadow](/assets/img/img_spring_framework.png){: .shadow style="max-width: 90%" }
     _초기 세팅은 위 그림처럼 하면 됩니다._
 
 1. Spring Boot 기반의 샘플 프로젝트 생성 <br>Spring Initializr [https://start.spring.io/](https://start.spring.io/) 공식 사이트로 이동합니다. Spring Initializr 공식 사이트에서는 여러분이 원하는 Spring Boot 실행 환경과 필요한 모듈을 손쉽게 포함하는 템플릿 프로젝트를 생성해줍니다.
@@ -102,7 +92,9 @@ Java 기반의 웹 애플리케이션을 만드는 다양한 기술들이 존재
 5. Spring Boot Application 동작 확인
 
 ## Reference
-[Spring Initializr](https://start.spring.io/)
+[What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF Example](https://www.guru99.com/database-normalization.html)
+<br>
+[Database Normalization](https://www.w3schools.in/dbms/database-normalization)
 
 
 ## 점검 및 평가
