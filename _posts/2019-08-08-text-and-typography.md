@@ -330,12 +330,12 @@ fi;
 ## 이모티콘
 💪:muscle:🦾:mechanical_arm:🕛:clock12:🕧:clock1230:🔥:fire:👏:clap:🙌:raised_hands:👐:open_hands:🤲:palms_up_together:🤝:handshake:🙏:pray:👌:ok_hand:🤞:crossed_fingers:👋:wave: 😂:joy: 😭:sob: 💩:poop: ❤️:heart: 💥:boom: 💯:100: 💢:anger:💬:speech_balloon: 💫:dizzy: 💦:sweat_drops: 👉:point_right:🖕:fu: 👈:point_left:
 ```markdown
-💪:muscle:🦾:mechanical_arm:
-🕛:clock12:🕧:clock1230:🔥:fire:
-👏:clap:🙌:raised_hands:👐:open_hands:🤲:palms_up_together:🤝:handshake
-:🙏:pray:👌:ok_hand:🤞:crossed_fingers:👋:wave: 😂:joy: 😭:sob:
-💩:poop: ❤️:heart: 💥:boom: 💯:100: 💢:anger:💬:speech_balloon: 💫:dizzy:
-💦:sweat_drops: 👉:point_right:🖕:fu: 👈:point_left:
+:muscle: :mechanical_arm:
+:clock12: :clock1230: :fire:
+:clap: :raised_hands: :open_hands: :palms_up_together: :handshake:
+:pray: :ok_hand: :crossed_fingers: :wave: :joy: :sob:
+:poop: ️:heart: :boom: :100: :anger: :speech_balloon:  :dizzy:
+:sweat_drops: :point_right: :fu: :point_left:
 ```
 
 ## 각주 연결(Reverse Footnote)
