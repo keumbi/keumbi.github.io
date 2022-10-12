@@ -63,7 +63,9 @@ Although the SOLID principles apply to any object-oriented design, they can also
 
 ## Learn SOLID Principles with CLEAN CODE Examples
 
-<div class="iframe-container"><iframe src="https://www.youtube.com/embed/_jDNAf3CzeY" title="YouTube video player" allowfullscreen></iframe></div>
+<div class="iframe-container"><iframe src="https://www.youtube.com/embed/_jDNAf3CzeY" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>
+
+
 
 ## Reference
 [객체지향 설계 원칙](https://itvillage.tistory.com/entry/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-SOLID-%EC%9B%90%EC%B9%99)

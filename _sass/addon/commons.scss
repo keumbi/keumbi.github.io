@@ -1682,10 +1682,10 @@ $sidebar-display: "sidebar-display";
 
 } /* min-width: 1650px */
 
-/* Keumbi  */
+/* Keumbi
 .iframe-container {
   overflow: hidden;
-  /* 16:9 aspect ratio */
+
   padding-top: 56.25%;
   position: relative;
    iframe {
@@ -1696,4 +1696,13 @@ $sidebar-display: "sidebar-display";
      top: 0;
      width: 100%;
    }
+}*/
+.iframe-container{
+  display: flex;
+  iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
 }
+
