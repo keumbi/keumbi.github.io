@@ -1,5 +1,5 @@
 ---
-title: Text and Typography
+title: 마크다운 사용법
 author: keumbi
 date: 2022-10-08 11:33:00 +0800
 categories: [Blogging, Demo]
@@ -13,7 +13,7 @@ image:
   alt: how to use...
 ---
 
-## 마크다운 사용법
+
 이 페이지는 내가 사용한 블로그 테마 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork),의 Text and Typography를 기본으로 작성했다. 블로그 작성 시 제목 규칙, 리스트 샘플을 확인할 수 있다.
 
 
@@ -327,6 +327,16 @@ fi;
   "colors/dark-typography"
 ```
 {: file='_sass/jekyll-theme-chirpy.scss'}
+## 이모티콘
+💪:muscle:🦾:mechanical_arm:🕛:clock12:🕧:clock1230:🔥:fire:👏:clap:🙌:raised_hands:👐:open_hands:🤲:palms_up_together:🤝:handshake:🙏:pray:👌:ok_hand:🤞:crossed_fingers:👋:wave: 😂:joy: 😭:sob: 💩:poop: ❤️:heart: 💥:boom: 💯:100: 💢:anger:💬:speech_balloon: 💫:dizzy: 💦:sweat_drops: 👉:point_right:🖕:fu: 👈:point_left:
+```markdown
+💪:muscle:🦾:mechanical_arm:
+🕛:clock12:🕧:clock1230:🔥:fire:
+👏:clap:🙌:raised_hands:👐:open_hands:🤲:palms_up_together:🤝:handshake
+:🙏:pray:👌:ok_hand:🤞:crossed_fingers:👋:wave: 😂:joy: 😭:sob:
+💩:poop: ❤️:heart: 💥:boom: 💯:100: 💢:anger:💬:speech_balloon: 💫:dizzy:
+💦:sweat_drops: 👉:point_right:🖕:fu: 👈:point_left:
+```
 
 ## 각주 연결(Reverse Footnote)
 

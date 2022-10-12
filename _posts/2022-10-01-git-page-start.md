@@ -8,7 +8,7 @@ tags: [github pages, error, setup]
 ---
 
 
-![Window shadow](https://media4.giphy.com/media/1SzIPkhn8EOK99F0vj/giphy.gif){: .shadow width="600" height="338" style="max-width: 80%" }
+![Window shadow](https://media4.giphy.com/media/1SzIPkhn8EOK99F0vj/giphy.gif){: .shadow style="max-width: 80%" }
 
 ## Overview
 부트캠프를 시작하고 벌써 계절이 바뀌고 시간이 점점 빠르게 가는 거 같습니다. 모든 크루분들이 블로그 기록에 대해 강조했던 부분이 있었습니다. Day1 메타인지에서 부터 강조했던, 자신의 언어로 배운 부분을 정리하는 것을 노션에 차곡차곡 쌓아 블로그에 멋지게 옮기려고 했지만... 정리하던 내용들을 우선 블로그 페이지로 옮겨두는 것으로 타협하고,  GitHub Page 세팅하면서 어려웠던 부분을 몇 자 적어 보았습니다.
