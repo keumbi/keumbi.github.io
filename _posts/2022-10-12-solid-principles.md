@@ -62,7 +62,7 @@ The SOLID acronym was introduced later, around 2004, by Michael Feathers.
 Although the SOLID principles apply to any object-oriented design, they can also form a core philosophy for methodologies such as agile development or adaptive software development.
 
 ## Learn SOLID Principles with CLEAN CODE Examples
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_jDNAf3CzeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/_jDNAf3CzeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{: .shadow style="max-width: 90%" }
 
 ## Reference
 [객체지향 설계 원칙](https://itvillage.tistory.com/entry/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EC%84%A4%EA%B3%84-%EC%9B%90%EC%B9%99-SOLID-%EC%9B%90%EC%B9%99)
