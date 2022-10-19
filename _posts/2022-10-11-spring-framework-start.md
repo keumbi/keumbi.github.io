@@ -2,7 +2,7 @@
 title: Spring Framework의 특징
 author: keumbi
 date: 2022-10-11 21:20:00 +0900
-categories: [Blogging, TIL]
+categories: [Spring Core]
 tags: [github pages, section2, spring framework]
 image:
 path: /assets/img/img_spring_framework.png
@@ -101,15 +101,13 @@ Spring은 POJO 프로그래밍을 지향하는 Framework
 
 Spring 삼각형 - IoC/DI 설명
 
-Library는 애플리케이션 흐름의 주도권이 개발자에게 있고, Framework은 애플리케이션 흐름의 주도권이 Framework에 있다고 했습니다. **애플리케이션 흐름의 주도권이 뒤바뀐 것**을 바로 **IoC(Inversion of Control)**라고 합니다.
+"Library는 애플리케이션 흐름의 주도권이 개발자에게 있고, Framework은 애플리케이션 흐름의 주도권이 Framework에 있다"라고 했습니다. **애플리케이션 흐름의 주도권이 뒤바뀐 것**을 바로 **IoC(Inversion of Control)**라고 합니다.
 
 Spring에는 이 IoC의 개념이 어떻게 적용되어 있을까요?
 
 답은 바로 **DI(Dependency Injection)**입니다.
 
-### 2.4. DI(Dependency Injection)
-
-DI 의존성 주입
+### 2.4. DI(Dependency Injection) 의존성 주입
 
 **IoC(제어의 역전)**는 서버 컨테이너 기술, 디자인 패턴, 객체 지향 설계 등에 적용하게 되는 일반적인 개념인데 반해 **DI(Dependency Injection)**는 IoC 개념을 조금 구체화 시킨 것이라고 볼 수 있습니다.
 

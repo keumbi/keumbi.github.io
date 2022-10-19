@@ -2,7 +2,7 @@
 title: SOLID(객체 지향 설계 원칙)
 author: keumbi
 date: 2022-10-12 21:20:00 +0900
-categories: [Blogging, TIL]
+categories: [Spring core]
 tags: [github pages, section2, solid principles]
 image:
 path: /assets/img/img_spring_framework.png

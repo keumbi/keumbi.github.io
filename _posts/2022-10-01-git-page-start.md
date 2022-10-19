@@ -2,7 +2,7 @@
 title: 블로그 다시 시작!!
 author: keumbi
 date: 2022-10-01 21:20:00 +0900
-categories: [Blogging, Error Handling Log]
+categories: [Error Handling Log]
 tags: [github pages, error, setup]
 
 ---

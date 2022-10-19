@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://keumbi.github.io/sitemap.xml

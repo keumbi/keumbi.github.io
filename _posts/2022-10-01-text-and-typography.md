@@ -2,7 +2,7 @@
 title: 마크다운 사용법
 author: keumbi
 date: 2022-10-08 11:33:00 +0800
-categories: [Blogging, Demo]
+categories: [How to...]
 tags: [typography]
 math: true
 mermaid: true

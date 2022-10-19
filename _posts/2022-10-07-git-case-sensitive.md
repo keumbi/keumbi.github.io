@@ -2,7 +2,7 @@
 title: GitHub 페이지 대소문자 변경
 author: keumbi
 date: 2022-10-07 21:20:00 +0900
-categories: [Blogging, Error Handling Log]
+categories: [Error Handling Log]
 tags: [github pages, error, bug fix]
 ---
 ![Window shadow](https://media3.giphy.com/media/JsE9qckiYyVClQ5bY2/giphy.gif){: .shadow style="max-width: 60%" }
