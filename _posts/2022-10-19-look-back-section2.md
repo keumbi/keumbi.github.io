@@ -99,5 +99,6 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
 
 ## Reference
 [우아한형제들 기술블로그- 팀 문화의 탄생](https://techblog.woowahan.com/2677/)
+
 [Retrospective method KPT](https://code-artisan.io/retrospective-method-kpt/)
 
