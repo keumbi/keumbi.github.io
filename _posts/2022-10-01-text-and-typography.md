@@ -1,6 +1,6 @@
 ---
 title: 마크다운 사용법
-author: keumbi
+authors: [cotes , keumbi]
 date: 2022-10-08 11:33:00 +0800
 categories: [How to...]
 tags: [typography]

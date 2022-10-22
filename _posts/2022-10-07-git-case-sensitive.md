@@ -19,6 +19,8 @@ git commit -a -m "Versioning untracked files"
 git push origin master
 //브랜치 이름이 main인 경우 master를 main으로 변경해야 함
 ```
+
+
 ## 마무리
 파일 이름의 대소문자 변경하고 싶다면, 임의로 파일 이름 변경하지 말고, git 명령어를 사용해서 변경하세요.
 
