@@ -2,8 +2,8 @@
 title: Spring Framework의 특징
 author: keumbi
 date: 2022-10-11 21:20:00 +0900
-categories: [Spring Core]
-tags: [github pages, section2, spring framework]
+categories: [Framework, Spring]
+tags: [framework, section2, spring framework, spring core]
 image:
 path: /assets/img/img_spring_framework.png
 width: 800

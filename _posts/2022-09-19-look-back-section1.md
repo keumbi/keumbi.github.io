@@ -2,7 +2,7 @@
 title: Section 1 회고
 author: keumbi
 date: 2022-09-19 21:20:00 +0900
-categories: [Look back]
+categories: [Look back, Section]
 tags: [look back, first, code states]
 pin: true
 ---

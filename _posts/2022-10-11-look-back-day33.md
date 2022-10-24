@@ -2,7 +2,7 @@
 title: Section2, Week9, Day 34
 author: keumbi
 date: 2022-10-01 21:20:00 +0900
-categories: [Look back]
+categories: [Look back, Day]
 tags: [github pages, week9, spring framework, code states ]
 
 ---
