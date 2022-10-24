@@ -1,5 +1,5 @@
 ---
-title: Java Math.max() 메서드 사용
+title: Java Math.max() 메서드 사0
 author: keumbi
 date: 2022-10-24 10:20:00 +0900
 categories: [Language, Java]
