@@ -91,7 +91,7 @@ brew install --cask karabiner-elements
 [Karabiner-Elements complex_modifications rules](https://ke-complex-modifications.pqrs.org/#korean_won_to_backtick) 다른분이 적용해 둔 파일을 가져올 수 있다.
 
 마이크로소프트 키보드 설정도 맥북에 맞게 원하는 기능으로 add item 버튼을 누르고 설정할 수 있다.
-![img.png](/assets/img-karabiner-keyboard/img.png)
+![img.png](/assets/img/img-karabiner-keyboard.png)
 
 Karabiner-ElementsViewer에서 어떤 키가 입력되고 있는지 확인 할 수 있다.
 입력 값을 확인하고, 수정할 수 있어서 한/영키나, 한자에 있는 키를 세팅하기 편하다.
