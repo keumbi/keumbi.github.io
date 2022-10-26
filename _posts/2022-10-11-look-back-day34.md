@@ -82,7 +82,7 @@ Java 기반의 웹 애플리케이션을 만드는 다양한 기술들이 존재
 
 -  Spring Initializr [https://start.spring.io/](https://start.spring.io/) 공식 사이트로 이동합니다. Spring Initializr 공식 사이트에서는 여러분이 원하는 Spring Boot 실행 환경과 필요한 모듈을 손쉽게 포함하는 템플릿 프로젝트를 생성해줍니다.
 
-![Window shadow](/assets/img/img_spring_framework.png){: .shadow style="max-width: 90%" }
+![Window shadow](/assets/img/img_spring_framework.png){:  style="max-width: 90%" }
     _초기 세팅은 위 그림처럼 하면 됩니다._
 
 1. Spring Boot 기반의 샘플 프로젝트 생성 <br>Spring Initializr [https://start.spring.io/](https://start.spring.io/) 공식 사이트로 이동합니다. Spring Initializr 공식 사이트에서는 여러분이 원하는 Spring Boot 실행 환경과 필요한 모듈을 손쉽게 포함하는 템플릿 프로젝트를 생성해줍니다.
