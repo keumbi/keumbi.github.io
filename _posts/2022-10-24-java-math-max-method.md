@@ -1,10 +1,9 @@
 ---
-title: Java Math.max() 메서드 사0
+title: Java Math.max()
 author: keumbi
 date: 2022-10-24 10:20:00 +0900
 categories: [Language, Java]
 tags: [java, method, max]
-
 ---
 
 ## Overview
@@ -29,20 +28,20 @@ The datatypes can be int, float, double or long.
 
 
 ### 1.1. double 사용 예시
+
 ```java
 // Java program to demonstrate the use of max() function
 // when two double data-type numbers are
 // passed as arguments
 public class Gfg {
 
-    public static void main(String args[])
-    {
-        double a = 12.123;
-        double b = 12.456;
+  public static void main(String[] args) {
+    double a = 12.123;
+    double b = 12.456;
 
-        // prints the maximum of two numbers
-        System.out.println(Math.max(a, b));
-    }
+    // prints the maximum of two numbers
+    System.out.println(Math.max(a, b));
+  }
 }
 ```
 Output:
@@ -50,14 +49,14 @@ Output:
 12.456
 
 ### 1.2. 정수와 음수 사용 예시
+
 ```java
 // Java program to demonstrate the use of max() function
 // when one positive and one negative
 // integers are passed as argument
 public class Gfg {
 
-  public static void main(String args[])
-  {
+  public static void main(String[] args) {
     int a = 23;
     int b = -23;
 
@@ -71,20 +70,20 @@ Output:
 23
 
 ### 1.2. 음수 사용 예시
+
 ```java
 
 // Java program to demonstrate the use of max() function
 // when two negative integers are passed as argument.
 public class Gfg {
 
-    public static void main(String args[])
-    {
-        int a = -25;
-        int b = -23;
+  public static void main(String[] args) {
+    int a = -25;
+    int b = -23;
 
-        // prints the maximum of two numbers
-        System.out.println(Math.max(a, b));
-    }
+    // prints the maximum of two numbers
+    System.out.println(Math.max(a, b));
+  }
 }
 ```
 Output:
