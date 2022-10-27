@@ -7,7 +7,7 @@ tags: [git, gpg key, error, intellij]
 ---
 
 ## Overview
-맥북 업데이트가 쏳아 올린 작은 공... 인텔리제이 업데이트 후 갑자기 한국어로 설정 변경됐다. 당황... 어색...
+맥북 업데이트가 쏘아 올린 작은 공... 인텔리제이 업데이트 후 갑자기 한국어로 설정 변경됐다. 당황... 어색...
 
 ## 1. 플러그인에서 설정 변경하기
 ![인텔리제이 상단 모양 선택](/assets/img/img-intellij-top.png){:.shadow style="max-width: 60%" }
@@ -16,7 +16,7 @@ tags: [git, gpg key, error, intellij]
 
 좌측 메뉴에서 플러그인 선택 -> 설치된 플러그인 중 `kor` 검색 -> `Korean Language Pack / 한국어 언어 팩` 체크박스 해제
 
-아래의 그림은 언어팩이 비활성화 된 상태입니다. 자세히 보시면, 체크박스가 해제돼있습니다.
+아래의 그림은 언어팩이 비활성화된 상태입니다. 자세히 보시면, 체크박스가 해제돼있습니다.
 
 아래의 그림처럼 체크박스를 해체하고, 적용 또는 확인 버튼을 누르면 됩니다.
 
@@ -28,7 +28,7 @@ tags: [git, gpg key, error, intellij]
 ## 2. 자동 줄바꿈으로 가로 스크롤 없애기 Soft Wrap 필요할 때
 
 ### 2.1. 에디터 창에서 라인 넘버 마우스 우클릭
-에디터 창에서 라인 넘버스가 활성화 되있다면, 오른쪽 클릭 혹은 `control + click`
+에디터 창에서 라인 넘버스가 활성화돼 있다면, 오른쪽 클릭 혹은 `control + click`
 
 ![인텔리제이 에디터 화면에서 줄](/assets/img/img-intellij-num.png){:.shadow}
 
@@ -37,7 +37,7 @@ tags: [git, gpg key, error, intellij]
 
 ![인텔리제이 에디터 팝업](/assets/img/img-intellij-pop-up.png){:.shadow}
 
-아래 그림과 같이 자동 개행이 적용된다!!
+아래 그림과 같이 자동 개행이  적용된다!!
 ![인텔리제이 에디터 적용 화면](/assets/img/img-intellij-soft-wrap.png)
 
 
@@ -57,7 +57,7 @@ Editor -> General -> Soft Wraps
 
 
 ## 3. ₩ → ` 설정 변경하는 방법
-맥 OS사용 시 **한글일 때 ₩**원화 표시가, **영어 때** `이 입력된다. (이걸 몰랐다!!!)
+맥 OS 사용 시 **한글일 때 ₩**원화 표시가, **영어 때** `이 입력된다. (이걸 몰랐다!!!)
 
 Wikipedia EN) The backtick ` is a typographical mark used mainly in computing. It is also known as backquote, grave, or grave accent.
 
