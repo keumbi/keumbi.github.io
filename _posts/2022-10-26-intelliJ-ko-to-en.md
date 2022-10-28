@@ -16,7 +16,7 @@ tags: [git, gpg key, error, intellij]
 
 좌측 메뉴에서 플러그인 선택 -> 설치된 플러그인 중 `kor` 검색 -> `Korean Language Pack / 한국어 언어 팩` 체크박스 해제
 
-아래의 그림은 언어팩이 비활성화된 상태입니다. 자세히 보시면, 체크박스가 해제돼있습니다.
+아래의 그림은 언어 팩이 비활성화된 상태입니다. 자세히 보시면, 체크박스가 해제돼있습니다.
 
 아래의 그림처럼 체크박스를 해체하고, 적용 또는 확인 버튼을 누르면 됩니다.
 
@@ -25,7 +25,7 @@ tags: [git, gpg key, error, intellij]
 ![플러그인에서 kor 검색](/assets/img/img-plugin-kor.png)
 
 
-## 2. 자동 줄바꿈으로 가로 스크롤 없애기 Soft Wrap 필요할 때
+## 2. 자동 줄 바꿈으로 가로 스크롤 없애기 Soft Wrap 필요할 때
 
 ### 2.1. 에디터 창에서 라인 넘버 마우스 우클릭
 에디터 창에서 라인 넘버스가 활성화돼 있다면, 오른쪽 클릭 혹은 `control + click`
@@ -91,11 +91,10 @@ brew install --cask karabiner-elements
 [Karabiner-Elements complex_modifications rules](https://ke-complex-modifications.pqrs.org/#korean_won_to_backtick) 다른분이 적용해 둔 파일을 가져올 수 있다.
 
 마이크로소프트 키보드 설정도 맥북에 맞게 원하는 기능으로 add item 버튼을 누르고 설정할 수 있다.
-![img.png](/assets/img/img-karabiner-keyboard.png)
+![키보드](/assets/img/img-karabiner-keyboard.png){:.shadow}
 
 Karabiner-ElementsViewer에서 어떤 키가 입력되고 있는지 확인 할 수 있다.
 입력 값을 확인하고, 수정할 수 있어서 한/영키나, 한자에 있는 키를 세팅하기 편하다.
-
 
 ## Reference
 <https://ani2life.com/wp/?p=1753>
