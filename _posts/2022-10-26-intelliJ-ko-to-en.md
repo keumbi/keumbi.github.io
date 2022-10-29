@@ -12,7 +12,7 @@ tags: [git, gpg key, error, intellij]
 ## 1. 플러그인에서 설정 변경하기
 ![인텔리제이 상단 모양 선택](/assets/img/img-intellij-top.png){:.shadow style="max-width: 60%" }
 
-좌측 상단에 `Intellij IDEA` 선택 -> `Preference` 선택 (단축키 `커멘드 + ,`)
+좌측 상단에 `Intellij IDEA` 선택 -> `Preference` 선택 (단축키 `cmd` + `,`)
 
 좌측 메뉴에서 플러그인 선택 -> 설치된 플러그인 중 `kor` 검색 -> `Korean Language Pack / 한국어 언어 팩` 체크박스 해제
 
@@ -28,7 +28,7 @@ tags: [git, gpg key, error, intellij]
 ## 2. 자동 줄 바꿈으로 가로 스크롤 없애기 Soft Wrap 필요할 때
 
 ### 2.1. 에디터 창에서 라인 넘버 마우스 우클릭
-에디터 창에서 라인 넘버스가 활성화돼 있다면, 오른쪽 클릭 혹은 `control + click`
+에디터 창에서 라인 넘버스가 활성화돼 있다면, 오른쪽 클릭 혹은 `control` + `click`
 
 ![인텔리제이 에디터 화면에서 줄](/assets/img/img-intellij-num.png){:.shadow}
 
@@ -42,7 +42,7 @@ tags: [git, gpg key, error, intellij]
 
 
 ### 2.3. 자동 줄바꿈으로 가로 스크롤 없애기 Soft Wrap 기본으로 적용
-좌측 상단에 `Intellij IDEA` 선택 -> `Preference` 선택 (단축키 `커멘드 + ,`)
+좌측 상단에 `Intellij IDEA` 선택 -> `Preference` 선택 (단축키 `cmd` + ` ``,`)
 
 Editor -> General -> Soft Wraps
 - [ ] Soft-wrap these files:->
