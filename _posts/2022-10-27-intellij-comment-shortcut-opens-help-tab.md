@@ -6,13 +6,11 @@ categories: [Error Handling Log]
 tags: [mac os, error, intellij, shortcut ]
 image:
   path: /assets/img/img-so-bad.png
-
-alt: 단축키, 포커싱 이도, 다시, 에디터로, 이동
+  alt: 단축키, 포커싱 이도, 다시, 에디터로, 이동
 ---
 
 ## Overview
 인텔리제이에서 여러 줄 주석 단축키와 맥에서 제공하는 앱 단축키가 같아서 생기는 오류입니다. 단축키 입력 후 포커스가 help 탭으로 이동해서 살짝 거슬렸는데 맥북 업데이트로 변경이 많이 돼서 찾기가 너무 힘들었습니다. macOS Ventura를 사용 중이라면 아래 그림을 참조해서 체크박스를 해제하시면 됩니다. 업데이트... 아직 받지 마세요 ㅠㅠ
-
 
 
 ## 1. 주석 단축키 `shift` + `cmd` + `/` 사용 시 help 메뉴 활성화
