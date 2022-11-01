@@ -1,5 +1,5 @@
 ---
-title: Intellij 업데이트 후 한국어에서 영문으로 변경
+title: Mac OS 업데이트 후 Intellij 한국어에서 영문으로 변경
 author: keumbi
 date: 2022-10-26 10:40:00 +0900
 categories: [Error Handling Log]
@@ -9,7 +9,7 @@ tags: [git, gpg key, error, intellij]
 ## Overview
 맥북 업데이트가 쏘아 올린 작은 공... 인텔리제이 업데이트 후 갑자기 한국어로 설정 변경됐다. 당황... 어색...
 
-## 1. 플러그인에서 설정 변경하기
+## 1. Intellij 플러그인에서 설정 변경하기
 ![인텔리제이 상단 모양 선택](/assets/img/img-intellij-top.png){:.shadow style="max-width: 60%" }
 
 좌측 상단에 `Intellij IDEA` 선택 -> `Preference` 선택 (단축키 `cmd` + `,`)
@@ -25,7 +25,7 @@ tags: [git, gpg key, error, intellij]
 ![플러그인에서 kor 검색](/assets/img/img-plugin-kor.png)
 
 
-## 2. 자동 줄 바꿈으로 가로 스크롤 없애기 Soft Wrap 필요할 때
+## 2. Intellij 자동 줄 바꿈으로 가로 스크롤 없애기 Soft Wrap 필요할 때
 
 ### 2.1. 에디터 창에서 라인 넘버 마우스 우클릭
 에디터 창에서 라인 넘버스가 활성화돼 있다면, 오른쪽 클릭 혹은 `control` + `click`
@@ -56,7 +56,7 @@ Editor -> General -> Soft Wraps
 ![에디터 적용하기](/assets/img/img-intellij-editor-general.png){:.shadow}
 
 
-## 3. ₩ → ` 설정 변경하는 방법
+## 3. 모든 프로그램에서 ₩ → ` 설정 변경하는 방법
 맥 OS 사용 시 **한글일 때 ₩**원화 표시가, **영어 때** `이 입력된다. (이걸 몰랐다!!!)
 
 Wikipedia EN) The backtick ` is a typographical mark used mainly in computing. It is also known as backquote, grave, or grave accent.
@@ -64,7 +64,7 @@ Wikipedia EN) The backtick ` is a typographical mark used mainly in computing. I
 Wikipedia KO) 백틱 `은 주로 컴퓨팅에서 사용되는 인쇄상의 표시입니다. 역따옴표, 억양 또는 억양 악센트라고도 합니다. 이 문자는 타자기가 기본 문자 위에 덮어써서 기본 문자에 억양을 추가할 수 있도록 설계되었습니다. 한국어로는 **억음부호**
 
 
-### 3.3 KeyBindings 폴더 만들어서 적용하기
+### 3.1 KeyBindings 폴더 만들어서 적용하기
 
 ```
 mkdir ~/Library/KeyBindings
