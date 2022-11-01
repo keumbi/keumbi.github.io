@@ -59,7 +59,7 @@ tags: [github pages, week1, how to learn, code states ]
 
 성장형 마인드셋- 자신의 능력과 지능, 성격까지 변할 수 있는 대상으로 보고 긍정적인 방향으로 성장할 수 있도록 노력함
 
-<div class="iframe-container"><iframe src="https://www.youtube.com/embed/_X0mgOOSpLU" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>
+
 
 ### 1.2. 메타인지: '생각에 관한 생각'
 
@@ -155,7 +155,7 @@ Survey(목차 보고 훑어보기), Question(질문하기), Read(꼼꼼하게 �
 
 7. Mnemonics 니모닉(기억술)을 사용하여 효과적으로 공부하기
 
-<div class="iframe-container"><iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>
+
 
 <details>
 <summary>from Youtube</summary>
