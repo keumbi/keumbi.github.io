@@ -7,7 +7,7 @@ tags: [github pages, error, bug fix]
 ---
 ![Window shadow](https://media3.giphy.com/media/JsE9qckiYyVClQ5bY2/giphy.gif){: .shadow style="max-width: 60%" }
 
-## Overview
+## 이슈
 블로그 초반에 세팅했던 명명 규칙이 마음에 들지 않아 아무 생각 없이 파일 이름을 수정했다. 처음 파일을 만들었을 때 `-` 줄표(dash) 없이 대소문자로만 파일명을 만들고 싶었다. 깃허브에서 대소문자 변경 시 에러가 발생하는 것 같다. 로컬은 정상 작동하지만, 같은 파일이 2개 되었다. 블로그 시작을 자랑하고 싶었던가...
 
 ## 터미널에서 입력

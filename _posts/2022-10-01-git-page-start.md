@@ -1,5 +1,5 @@
 ---
-title: 블로그 다시 시작!!
+title: 블로그 GitHub Page로 다시 시작!!
 author: keumbi
 date: 2022-10-01 21:20:00 +0900
 categories: [Error Handling Log]
@@ -10,7 +10,7 @@ tags: [github pages, error, setup]
 
 ![Window shadow](https://media4.giphy.com/media/1SzIPkhn8EOK99F0vj/giphy.gif){: .shadow style="max-width: 80%" }
 
-## Overview
+## 이슈
 부트캠프를 시작하고 벌써 계절이 바뀌고 시간이 점점 빠르게 가는 거 같습니다. 모든 크루분들이 블로그 기록에 대해 강조했던 부분이 있었습니다. Day1 메타인지에서 부터 강조했던, 자신의 언어로 배운 부분을 정리하는 것을 노션에 차곡차곡 쌓아 블로그에 멋지게 옮기려고 했지만... 정리하던 내용들을 우선 블로그 페이지로 옮겨두는 것으로 타협하고,  GitHub Page 세팅하면서 어려웠던 부분을 몇 자 적어 보았습니다.
 
 ## GitHub page 수정 확인 방법
@@ -44,20 +44,64 @@ bundle exec jekyll serve
 ```
 jekyll build
 ```
+끝!!
+
+## 좋은 커밋 메세지 어떻게 작성하지?
+1. 50자 내외로 작성
+2. 영문 작성시 첫 글자 대문자로 작성
+3. 마침표 사용 안하기
+4. 명령문 형태로 작성
 
 
-Tag Name	Description
-Add	새로운 파일 추가
-Feat	새로운 기능 추가
-Fix	버그 수정
-Docs	문서 수정
-Style	코드 formatting, 세미콜론 누락, 코드 변경이 없는 경우
-Design	css 수정
-Rename	파일 및 폴더 구조 변경
-Refactor	코드 리팩토링
-Modify	코드 단순 수정
-Test	테스트 추가, 테스트 리팩토링
-Chore	빌드 업무 수정, 패키지 매니저 수
+**4.1. 명령문 형태로 작성 예제**
+
+Refactor subsystem X for readability
+
+Update getting started documentation
+
+Remove deprecated methods
+
+Release version 1.0.0
+
+**For example:**
+
+* If applied, this commit will <U>refactor subsystem X for readability</U>
+* If applied, this commit will <U>update getting started documentation</U>
+* If applied, this commit will <U>remove deprecated methods</U>
+* If applied, this commit will <U>release version 1.0.0</U>
+* If applied, this commit will <U>merge pull request #123 from user/branch</U>
+
+**Notice how this doesn’t work for the other non-imperative forms:**
+
+* If applied, this commit will ~~fixed bug with Y~~
+* If applied, this commit will ~~changing behavior of X~~
+* If applied, this commit will ~~more fixes for broken stuff~~
+* If applied, this commit will ~~sweet new API methods~~
+
+### TIP. Git Commit Comment Convention
+**Tag Name**	Description
+
+**Add**	새로운 파일 추가
+
+**Feat**	새로운 기능 추가
+
+**Fix**	버그 수정
+
+**Docs**	문서 수정
+
+**Style**	코드 formatting, 세미콜론 누락, 코드 변경이 없는 경우
+
+**Design**	css 수정
+
+**Rename**	파일 및 폴더 구조 변경
+
+**Refactor**	코드 리팩토링
+
+**Modify**	코드 단순 수정
+
+**Test**	테스트 추가, 테스트 리팩토링
+
+**Chore**	빌드 업무 수정, 패키지 매니저 수
 
 
 <!--git checkout -b bugFix-->
@@ -94,8 +138,4 @@ Chore	빌드 업무 수정, 패키지 매니저 수
 
 [jekyll 오류 해결](https://velog.io/@minji-o-j/jekyll-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0)
 
-[크롬부가기능 추천](https://jojoldu.tistory.com/406?category=798573)
-
-[PMD](https://velog.io/@been/IT%EA%B8%B0%EC%82%AC%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EA%B6%8C%EC%9E%A5%ED%95%98%EB%8A%94-Java-%EC%BD%94%EB%93%9C-%ED%92%88%EC%A7%88-%EB%8F%84%EA%B5%AC)
-
-[글 쓸 시간을 따로 마련하기](https://wormwlrm.github.io/2022/08/20/Personal-Branding-from-Technical-Writing.html)
+[How to write a git commit message](https://cbea.ms/git-commit/)

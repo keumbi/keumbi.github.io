@@ -1,11 +1,12 @@
 ---
 title: 마크다운 사용법
 authors: [cotes , keumbi]
-date: 2022-10-08 11:33:00 +0800
+date: 2022-08-20 11:33:00 +0800
 categories: [How to...]
-tags: [typography]
+tags: [typography, markdown, chirpy]
 math: true
 mermaid: true
+pin: true
 image:
   path: /assets/img/oh.gif
   width: 800
@@ -338,6 +339,27 @@ fi;
 :sweat_drops: :point_right: :fu: :point_left:
 ```
 
+## 개행
+강제로 개행 하기 위해서 첫줄에 마지막에 빈칸 두칸을 추가하고
+나머지 줄을 작성 하면 됩니다.
+
+```markdown
+강제로 개행 하기 위해서 첫줄에 마지막에 빈칸 두칸을 추가하고 (<-- two spaces)
+나머지 줄을 작성 하면 됩니다.
+```
+First line with two spaces after.
+And the next line.
+
+First line with the HTML tag after.<br>
+And the next line.
+```markdown
+First line with two spaces after.
+And the next line.
+
+First line with the HTML tag after.<br>
+And the next line.
+```
+
 ## 각주 연결(Reverse Footnote)
 
 [^footnote]: The footnote source
@@ -346,3 +368,9 @@ fi;
 [^footnote]: 각주에 대한 설명
 [^fn-nth-2]: 각주 예제2 설명
 ```
+
+
+## Reference
+[Linebreak](https://gist.github.com/shaunlebron/746476e6e7a4d698b373)
+
+[Markdown guide](https://www.markdownguide.org/basic-syntax/)

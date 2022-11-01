@@ -1,5 +1,5 @@
 ---
-title: Section2, Week9, Day 34
+title: Section2, Week9, Day 34 TIL
 author: keumbi
 date: 2022-10-01 21:20:00 +0900
 categories: [Look back, Day]
@@ -97,7 +97,7 @@ Java 기반의 웹 애플리케이션을 만드는 다양한 기술들이 존재
 [Database Normalization](https://www.w3schools.in/dbms/database-normalization)
 
 
-## 점검 및 평가
+## 🔥 데일리 회고 - 점검 및 평가
 
 정규학습시간을 마친 후에는 정규학습시간 전에 개인 블로그나 노트에 적어둔 계획 단계에 대한 답변과, 아래 질문에 대한 답변을 블로그나 노트에 추가로 작성해 봅니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Section3, Week12, Day 48
+title: Section3, Week12, Day 48 TIL
 author: keumbi
 date: 2022-10-31 21:20:00 +0900
 categories: [Look back, Day]
@@ -142,7 +142,7 @@ Pagenation이 무엇인지 어떤 기능을 하는지...
     }
 }
 ```
-- 코드 h-1과 같이 현재 조회하는 page의 정보가 `pageInfo`에 포함되어야 합니다.
+- 위의 코드와 같이 현재 조회하는 page의 정보가 `pageInfo`에 포함되어야 합니다.
   - `page`
     - 데이터 타입: int
     - 설명

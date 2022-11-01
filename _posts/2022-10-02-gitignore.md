@@ -1,8 +1,8 @@
 ---
-title: gitignore is 무엇...
+title: gitignore는 무엇인가?
 author: keumbi
 date: 2022-10-02 21:20:00 +0900
-categories: [Error Handling Log]
+categories: [How to...]
 tags: [github pages, error, gitignore, git ignore]
 
 ---

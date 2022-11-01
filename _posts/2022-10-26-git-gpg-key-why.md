@@ -8,14 +8,14 @@ tags: [git, gpg key, error, intellij]
 
 ![Window shadow](https://media0.giphy.com/media/CoND5j6Bn1QZUgm1xX/giphy.gif){: .shadow style="max-width: 60%" }
 
-## Overview
+## 이슈
 의식에 흐름 없이 맥북 업데이트를 하고, 과제를 제출하려는 순간... 두둥!! 인텔리제이에서 에러 발생!! 커밋이 안 됐다. 급히 터미널을 열고, 다시 시도했지만, 같은 에러 메시지를 토해냈다. `error: gpg failed to sign the data` 이 에러는요... 레퍼런스에 있는 링크를 참조해서 한 땀 한 땀 적용해 봅니다.
 
-## GitHub Keybase
+## GitHub Key-base
 <div class="iframe-container"><iframe src="https://www.youtube.com/embed/4V-7KnhcrbY" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>
 _4년전 영상이지만 참고하기 좋습니다._
 
-## Conclusion
+## 마무리
 
 ```
 git config --global  commit.gpgsign false

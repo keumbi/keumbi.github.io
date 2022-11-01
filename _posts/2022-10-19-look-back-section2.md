@@ -11,9 +11,13 @@ pin: true
 _Great job!! but I'm dizzy..._
 
 ## Overview
-통곡의 벽!! 섹션 2... 자료구조/알고리즘, 네트워크, 데이터베이스, Spring Core 순식간에 지나갔다. KPT를 기반으로 작성해 보겠다.
+통곡의 벽!! 섹션 2... 자료구조/알고리즘, 네트워크, 데이터베이스, Spring Core 순식간에 지나갔다.
+
+KPT를 기반으로 작성해 보겠다.
 Keep: 좋았던 부분, 계속 유지됐으면 하는 부분
+
 Problem: 잘 안되었던 부분, 문제라고 생각하는 부분
+
 Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
 
 ## 1. 목표 상기하기
@@ -86,7 +90,7 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
    * 매주 4L로 체크하는 시간 갖기
 
 
-*4L: Liked, Learned, Lacked, Longed for*
+**4L: Liked, Learned, Lacked, Longed for**
 
 😍 좋았던 것(Liked)
 
@@ -102,3 +106,4 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
 
 [Retrospective method KPT](https://code-artisan.io/retrospective-method-kpt/)
 
+[생각정리 by 향로](https://jojoldu.tistory.com/302)

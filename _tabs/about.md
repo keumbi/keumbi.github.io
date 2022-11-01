@@ -5,7 +5,7 @@ order: 4
 
 ---
 
-![박요셉 작가님 Blue Owls 중](/assets/img/oyowwo.jpg)
+![박요셉 작가님 Blue Owls 중](/assets/img/oyowwo.jpg){:.shadow style="max-width: 90%" }
 ##  『Blue Owls』 from 오요우 [@oyowwo](https://www.instagram.com/oyowwo/)
 > 파비콘과 프로필로 사용한 이미지는 박요셉 작가님의 『Blue Owls』 중 한 작품입니다.
 {: .prompt-info }
@@ -16,7 +16,8 @@ order: 4
 #zine #risograph #blueowls
 [인스타그램에 게시한 작가님의 책소개 내용](https://www.instagram.com/p/CHH78E6H-9q/)
 
-![박요셉 작가님 사인 22년 6월 18일](/assets/img/oyowwo_autograph.jpg)
+![박요셉 작가님 사인 22년 6월 18일](/assets/img/oyowwo_autograph.jpg){:.shadow style="max-width: 50%" }
+
 그림도시 오요우 부스에서 친절하게 사인을!! 그림으로 그려주셨다. 완전 감동!! <br>
 볼 때마다 기분이 좋아지는 그림이다. 수영장에 달려가고 싶어지는건... 나도 밤 수영...  ㅠㅠ
 
