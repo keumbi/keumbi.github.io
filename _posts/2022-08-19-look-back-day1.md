@@ -7,35 +7,98 @@ tags: [github pages, week1, how to learn, code states ]
 
 ---
 
+## Daily to-do list
 
-<div class="iframe-container"><iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>
+- [x]  OT
+- [x]  사전 안내문서
+- [x]  점심시간
+- [x]  Chapter 메타인지
+- [x]  Chapter Pair Programming
+- [x]  Chapter 학습전략
+- [x]  Chapter Agora States
+- [x]  Zoom Checkpoint
+- [x]  개인학습
 
-<details>
-<summary>from Youtube</summary>
+## 계획 단계
+학습을 시작하기전 나의 현재 상태를 모니터링 해 봅시다.
+아래 두 가지 질문에 대한 답을 천천히 생각해 본 후, 개인 블로그나 노트를 활용하여 기록합니다.
 
-  1. Don't study for too long if you are not enjoying it. Take short breaks after 20-30 minutes. <br>
-  2. Don't study in the living room, bedroom, etc. Study in a separate place dedicated to studying.<br>
-  3. Don't try to memorize without understanding. Try to understand the concept first.<br>
-  4. Don't always study alone. Studying in groups helps a lot.<br>
-  5. Don't highlight text blindly. Highlighting doesn't help that much. It only indicates Recognization not Recollection of the topic.<br>
-  6. Always take notes. Reviewing the notes after a short time helps a lot.<br>
-  7. Always try to teach others what you have learned. Teaching is the best way of learning.<br>
-  8. Sleep is so much important for pushing something into your long-term memory. Get at least 7-8 hours of sound sleep.<br>
-  9. Use the SQ3R(survey, question, recite, read, review) method while studying.<br>
-  10. Use Mnemonics. It's the best way to memorize facts.<br>
+✅ **오늘 나의 학습 목표는 무엇인가요?**
+- 메타인지
+- Pair Programming
+- 학습 전략
+- Agora States
 
-  00:15 –  1) Study break<br>
-  07:50 –  2) Reward system<br>
-  10:19 –  3) Dedicated study area (Behavior Reinforcement)<br>
-  19:49 –  4) Rote memorization vs. Active learning<br>
-  32:49 –  5) Study groups<br>
-  33:58 –  6) Highlighting books (Recognition vs. Recollection)<br>
-  36:37 –  7) Remembering  (Recollection) <br>
-  36:57 –  8) Sleeping (REM  Sleep)<br>
-  39:09 –  9) Taking notes<br>
-  41:20 – 10) Active Recitation<br>
-  43:22 – 11) Study from books (SQ3R = Survey,  Question,  Read,  Recite,  Review)<br>
-  47:42 – 12) Mnemonics (Acronyms, Coin Sayings, Interactive Images)
+✅ **오늘 학습할 내용 중에 이미 알고 있는 내용은 무엇인가요?** 없다...
 
-</details>
+✅ **굿모닝 세션**
 
+
+
+## Overview
+단순한 지식이 아닌 학습하는 방법 그 자체, 자기주도학습을 익혀야 한다.
+
+내가 무엇을 모르는지 인지하고 모르는 내용을 직접 검색하는 것
+
+앞으로 학습할 지식은 시험을 위한 지식이 아닌, **현업에서 바로 활용하기 위한 지식이다!**
+
+시간을 충분히 할애하여 문제 해결
+
+1. 페어와 함께 의논하며 진행 - Pair Programming
+2. 코드를 시작하기 전에 요구 사항을 단순화하여 진행 - 수도 코드
+3. 문제가 발생 - 검색
+4. 검색으로도 해결하지 못하는 상황 - 아고라 스테이츠
+
+**본격적으로 개발과 관련된 학습을 진행하기 전에, 자기주도적으로 학습하는 방법에 집중!!**
+
+## 1. 메타인지
+
+### 1.1. 고정형 마인드셋 VS. 성장형 마인드셋
+
+고정형 마인드셋- 인간의 재능과 능력은 고정적이며 변하지 않는다고 생각함(도전을 두려워하고 노력을 경시)
+
+성장형 마인드셋- 자신의 능력과 지능, 성격까지 변할 수 있는 대상으로 보고 긍정적인 방향으로 성장할 수 있도록 노력함
+
+<div class="iframe-container"><iframe src="https://www.youtube.com/embed/_X0mgOOSpLU" title="YouTube video player" frameborder="0" allowfullscreen></iframe></div>
+
+### 1.2. 메타인지: '생각에 관한 생각'
+
+1. 자기자신을보는거울
+2. 스스로를 믿는 능력
+3. 나의 완벽하지 않은 모습을 인정하는 것
+
+#### 메타인지와 학습: 자신에게 맞는 방법과 속도를 찾아가는 과정
+
+지식 그 자체가 아닌 지식을 효과적으로 획득할 수 있는 자신만의 방법을 개발하는 것이며, 빠른 성취를 위한 단기적 도구가 아닌 지속적인 모니터링을 통한 점진적인 과정
+
+#### 메타인지가 필요한 이유
+
+1. 나 자신의 객관적 수준 파악
+2. 효율적성장
+
+> 메타인지는 현재 나의 인지 상태를 모니터링하는 능력이다. 모니터링 능력을 발달시키기 위해서는 자신이 무엇을 ‘어려워하는지’ 알아야 함과 동시에 ‘모를 수도 있다’는 사실을 인정해야 한다. 무언가를 모를 수 있다는 사실조차 인지하지 못한다면 모니터링과 컨트롤 능력을 제대로 키울 수 없다. 리사 손 <메타인지 학습법> 中
+
+
+## 2. 페어 프로그래밍
+
+### 페어 프로그래밍 (하나의 컴퓨터를 중간에 두고, 두 명의 개발자가 함께 작업하는 것)
+
+내비게이터(Navigater) - 문제를 해결하기 위한 전체적인 방향 제시
+
+드라이버(Driver) - 화면을 공유하며, 구체적인 문제 해결 방법을 생각해보고 코드 작성
+
+#### 페어 프로그래밍이 필요한이유
+
+커뮤니케이션, 배운 것을 누군가에게 설명한다는 것, 자기 객관화
+
+#### 페어 공지
+
+디스코드로 페어와 연락, 정해진 시간 동안 진행
+
+#### 페어 프로그래밍 중 생길 수 있는 이슈
+
+내가 페어보다 잘할 때 (잘하는 사람의 좋은 점을 흡수)
+
+내가 페어보다 못할 때 (알려줘서 능력을 같이 향상)나랑 비슷할 때 (둘 다 못할 경우 - 과정이 중요하므로 같이 해결)
+
+### **기타 이슈 사항**- 발생시 수강생 헬프센터 접수
