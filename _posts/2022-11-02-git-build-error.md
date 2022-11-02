@@ -49,6 +49,7 @@ Error: Process completed with exit code 1.
 `control` + `shift` + `r`
 
 
+## Reference
 
 [Parsing error: invalid-first-character-of-tag-name in expression.](https://github.com/vuejs/eslint-plugin-vue/issues/370)
 
