@@ -1,5 +1,5 @@
 ---
-title: git
+title: Section1, Week1, Day 1 TIL
 author: keumbi
 date: 2022-08-19 21:20:00 +0900
 categories: [Look back, Day]
