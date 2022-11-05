@@ -4,7 +4,6 @@ author: keumbi
 date: 2022-10-19 21:20:00 +0900
 categories: [Look back, Section]
 tags: [look back, second, code states]
-pin: true
 ---
 
 ![Window shadow](https://media3.giphy.com/media/APH2yVA1J0EWA/giphy.gif){: .shadow style="max-width: 80%" }

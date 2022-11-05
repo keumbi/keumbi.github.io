@@ -4,7 +4,6 @@ author: keumbi
 date: 2022-09-19 21:20:00 +0900
 categories: [Look back, Section]
 tags: [look back, first, code states]
-pin: true
 ---
 
 ![You Win the Internet](https://i.giphy.com/media/eoxomXXVL2S0E/giphy.webp){: .shadow width="420" height="315" style="max-width: 80%" }
