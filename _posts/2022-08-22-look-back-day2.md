@@ -3,7 +3,7 @@ title: Section1, Week2, Day 2 TIL
 author: keumbi
 date: 2022-08-22 21:20:00 +0900
 categories: [Look back, Day]
-tags: [week2, development ]
+tags: [week2, development, intellij, programing, server ]
 
 ---
 
