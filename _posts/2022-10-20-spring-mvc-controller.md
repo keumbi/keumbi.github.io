@@ -1,7 +1,7 @@
 ---
 title: Controller 클래스 설계 및 구조
 author: keumbi
-date: 2022-10-20 21:20:00 +0900
+date: 2022-10-20 22:20:00 +0900
 categories: [Framework, Spring]
 tags: [framework, section3, spring, spring mvc, controller]
 mermaid: true
