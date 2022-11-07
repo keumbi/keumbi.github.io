@@ -3,7 +3,7 @@ title: Spring Framework Validation
 author: keumbi
 date: 2022-10-21 21:20:00 +0900
 categories: [Framework, Spring]
-tags: [framework, section3, spring, spring MVC]
+tags: [framework, section3, spring, spring mvc]
 
 ---
 
