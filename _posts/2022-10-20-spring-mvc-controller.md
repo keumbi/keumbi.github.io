@@ -11,7 +11,7 @@ mermaid: true
 
 Spring MVC 기반 웹 애플리케이션의 API 계층에서 사용되는, 클라이언트의 HTTP 요청을 직접적으로 전달 받는 Controller의 기능들을 알아보고 직접 코드로 구현해보도록 하겠습니다.
 
-![클라이언트와 서버의 요청과 응답 웹 애플리케이션 API 계층 (API Layer)아키텍쳐](/assets/img/img-spring-api.png)
+<!--![클라이언트와 서버의 요청과 응답 웹 애플리케이션 API 계층 (API Layer)아키텍쳐](/assets/img/img-spring-api.png)-->
 
 ## 1. Controller 클래스 설계 및 구조 생성
 
