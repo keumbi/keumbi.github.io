@@ -19,12 +19,13 @@ java -jar hello-spring-0.0.1-SNAPSHOT.jar
 위에 내용을 실행 중 (1)을 터미널에 입력했을 때 permission denied: ./gradlew 에러가 발생 됐다.
 
 ## 에러 메시지
-![에러](/assets/img/img-gradlew-error.png)
+![에러](/assets/img/img-gradlew-error.png){:.shadow style="max-width: 60%" }
 ```
 permission denied: ./gradlew
 ```
 
 ## 해결 방법
+![img.png](/assets/img/img-gradlew-error2.png){:.shadow style="max-width: 60%" }
 
 `chmod +x gradlew` 입력
 
