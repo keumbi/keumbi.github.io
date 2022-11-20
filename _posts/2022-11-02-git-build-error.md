@@ -18,12 +18,12 @@ Run failed: Automatic build 깃허브 자동 배포 실패 메일이 왔다!! �
 ## 에러 메시지
 
 ![에러 메세지](/assets/img/img-build-error.png)
-```
+```shell
 * 1:13612: ERROR: Invalid first code point of tag name U+BA54.
 ```
 
 ![img.png](/assets/img/img-build-error2.png)
-```
+```shell
 *  1:13628: ERROR: Invalid first code point of tag name U+BA54.
 
 HTML-Proofer found 2 failures!

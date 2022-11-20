@@ -201,8 +201,7 @@ CLI 환경 에디터 vim, emacs  등이 있다.
 **nano 실행**
 
 아래의 명령어를 통해 nano를 실행시킬 수 있습니다.
-
-```
+```shell
 nano hello.java  # hello.java를 nano에서 엽니다.
 nano # 그냥 실행할 수도 있습니다.
 ```

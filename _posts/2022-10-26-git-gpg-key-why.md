@@ -17,13 +17,13 @@ _4년전 영상이지만 참고하기 좋습니다._
 
 ## 마무리
 
-```
+```shell
 git config --global  commit.gpgsign false
 ```
 그냥 사용 안 할 거야... 하면 되는 거였다!!
 
 ### Conclusion + 자매품 :wink:
-```
+```shell
 git config --global http.sslVerify false
 ```
 

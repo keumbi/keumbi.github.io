@@ -2,8 +2,8 @@
 title: 웹개발 기초
 author: keumbi
 date: 2022-08-22 21:20:00 +0900
-categories: [Development, Web]
-tags: [week2, development, computer, programming]
+categories: [How to...]
+tags: [week2, development, computer, programming, web]
 ---
 
 

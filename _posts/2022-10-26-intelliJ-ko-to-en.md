@@ -48,7 +48,7 @@ Editor -> General -> Soft Wraps
 - [ ] Soft-wrap these files:->
 - [x] Soft-wrap these files:
 그리고 적용될 파일 적는 칸에 자기가 원하는 파일 형식을 직접 적거나, 아래와 같이 모든 파일 적용을 이어서 적어준다.
-```
+```shell
 ;*
 ```
 모든 파일에 자동 줄 바꿈이 적용된다!!
@@ -66,26 +66,27 @@ Wikipedia KO) 백틱 `은 주로 컴퓨팅에서 사용되는 인쇄상의 표�
 
 ### 3.1 KeyBindings 폴더 만들어서 적용하기
 
-```
+```shell
 mkdir ~/Library/KeyBindings
 ```
 
 DefaultkeyBinding.dict 파일 만들기
 
-```
+```shell
 vi ~/Library/KeyBindings/DefaultkeyBinding.dict
 ```
 
 설정 변경 내용 입력하기
 
-```
+```shell
 {
     "₩" = ("insertText:", "`");
 }
 ```
 
 ### 3.2. Karabiner-Elements 사용하기
-```
+
+```shell
 brew install --cask karabiner-elements
 ```
 [Karabiner-Elements complex_modifications rules](https://ke-complex-modifications.pqrs.org/#korean_won_to_backtick) 다른분이 적용해 둔 파일을 가져올 수 있다.

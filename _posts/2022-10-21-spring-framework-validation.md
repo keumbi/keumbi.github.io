@@ -14,7 +14,7 @@ Java Bean Validation 프레임워크는 이러한 종류의 검증을 처리하�
 ## 1. Validation Annotations 사용하기
 
 ### 1.1. build.gradle에 의존성 추가 확인
-```
+```shell
 implementation 'org.springframework.boot:spring-boot-starter-validation'
 ```
 

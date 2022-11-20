@@ -15,7 +15,7 @@ tags: [github pages, error, setup]
 
 ## GitHub page 수정 확인 방법
 git clone 경로(폴더) 이동 후 서버 시작하는 명령어 입력
-```
+```shell
 bundle exec jekyll s
 ```
 
@@ -26,22 +26,22 @@ bundle exec jekyll s
 아래의 문구가 터미널에 출력됐다면, 당황하지 말고, 구글링하면 대부분 해결할 수 있습니다.
 
 ### Jekyll 4.2.0 Please append --trace to the serve command
-```
+```shell
 bundle exec jekyll serve --trace
 ```
 
 
 ## Could not find gem 'webric x64-mingw32'
 설치 (시키는데로 하면 대부분 됨)
-```
+```shell
 gem install webrick
 ```
 버전 업데이트
-```
+```shell
 bundle exec jekyll serve
 ```
 다시 빌드
-```
+```shell
 jekyll build
 ```
 끝!!
