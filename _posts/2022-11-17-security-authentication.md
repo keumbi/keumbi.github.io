@@ -10,6 +10,15 @@ tags: [github pages, week14, https, hashing, cookie, session, web application se
 Spring Framework에서는 Spring Security를 통해 보안 관련 기능을 편리하게 지원하고 있습니다.
 Spring Security를 이용해 인증과 보안을 구현하기에 앞서, 인증과 보안의 기초가 되는 개념들에 대해 알아보겠습니다.
 
+> 학습목표
+- 암호화와 hashing, salting 등의 개념을 이해할 수 있다.
+- HTTP와 HTTPS의 차이점을 이해할 수 있다.
+- 권한 부여(Authorization)와 인증(Authentication)에 대해 이해할 수 있다.
+- 쿠키의 작동 원리를 이해할 수 있다.
+- 클라이언트, 서버, 데이터베이스의 전체 동작을 이해할 수 있다.
+- 서비스의 보안과 관련된 방법을 알아보고 원리 및 장점 및 단점을 이해할 수 있다.
+{: .prompt-tip }
+
 ## 1. HTTPS
 
 **비대칭키 방식을 통해 대칭키를 주고받고, 대칭키 방식을 통해 client와 server가 데이터를 주고받는다.**
