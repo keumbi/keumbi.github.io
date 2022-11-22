@@ -1,5 +1,6 @@
 ---
 title: 인증 / 보안 기초
+author: keumbi
 date: 2022-11-17 23:20:00 +0900
 categories: [How to...  ]
 tags: [github pages, week14, https, hashing, cookie, session, web application security ]
