@@ -3,7 +3,7 @@ title: Spring Security
 author: keumbi
 date: 2022-11-18 23:20:00 +0900
 categories: [Framework, Spring]
-tags: [github pages, week14, spring, spring security ]
+tags: [week14, spring, spring security]
 published: false
 ---
 
@@ -73,11 +73,45 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - Spring Security는 특정 보안 요구 사항을 만족하기 위한 커스터마이징이 용이하고, 유연한 확장이 가능하다.
 
 #### 심화 학습
+
 - [Apache Shiro](https://shiro.apache.org/)
 - [OACC](http://oaccframework.org/)
 
 ### 1.3. Spring Security의 기본 구조
 
+- Spring Security의 기본 구조와 기본적인 동작 방식을 이해하기 가장 좋은 인증 방식은 **폼 로그인 인증** 방식이다.
+- Spring Security를 이용한 보안 설정은 `HttpSecurity` 를 파라미터로 가지고, `SecurityFilterChain` 을 리턴하는 Bean을 생성하면 된다.
+- `HttpSecurity` 를 통해 Spring Security에서 지원하는 보안 설정을 구성할 수 있다.
+- 로컬 환경에서 Spring Security를 테스트하기 위해서는 CSRF 설정을 비활성화 해야 한다.
+- `InMemoryUserDetailsManager` 를 이용해 데이터베이스 연동없이 테스트 목적의 InMemory User를 생성할 수 있다.
+- Spring Security에서 지원하는 InMemory User는 말 그대로 메모리에 등록되어 사용되는 User이므로 애플리케이션 실행이 종료되면 InMember User 역시 메모리에서 사라진다.
+- InMemory User를 사용하는 방식은 **테스트 환경**이나 **데모 환경**에서 사용할 수 있는 방법이다.
+- Spring Security는 사용자의 **크리덴셜(Credential, 자격증명을 위한 구체적인 수단)**을 암호화 하기 위한 PasswordEncoder를 제공하며, PasswordEncoder는 다양한 암호화 방식을 제공하며, Spring Security에서 지원하는 PasswordEncoder의 디폴트 암호화 알고리즘은 bcrypt이다.
+- 패스워드 같은 **민감한(sensitive) 정보는 반드시 암호화 되어 저장되어야 합니다.**
+  패스워드는 복호화 할 이유가 없기 때문에 **단방향 암호화** 방식으로 암호화 되어야 한다.
+- Spring Security에서 `SimpleGrantedAuthority` 를 사용해 Role 베이스 형태의 권한을 지정할 때 `‘Roll_’ + 권한명` 형태로 지정해 주어야 한다.
+- Spring Security에서는 Spring Security에서 관리하는 User 정보를 `UserDetails`로 관리한다.
+- `UserDetails`는 UserDetailsService에 의해 로드(load)되는 핵심 User 정보를 표현하는 인터페이스입니다.
+- `UserDetailsService`는 User 정보를 로드(load)하는 핵심 인터페이스이다.
+- 일반적으로 Spring Security에서는 인증을 시도하는 주체를 `User(비슷한 의미로 Principal도 있음)`라고 부른다. Principal은 User의 더 구체적인 정보를 의미하며, 일반적으로 Username을 의미한다.
+- Custom UserDetailsService를 사용해 로그인 인증을 처리하는 방식은 **Spring Security가 내부적으로 인증을 대신 처리해주는 방식이다.**
+- `AuthenticationProvider`는 Spring Security에서 클라이언트로부터 전달받은 인증 정보를 바탕으로 인증된 사용자인지를 처리하는 Spring Security의 컴포넌트이다.
+
+
+#### 심화 학습
+- [SSR(Server Side Rendering) 방식의 Controller 구현 방식](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-controller)
+- [Ant Pattern](https://ant.apache.org/manual/dirtasks.html#patterns)
+- [XML Name Space](https://www.w3schools.com/xml/xml_namespaces.asp)
+- [Spring Security에서 제공하는 PasswordEncoder](https://docs.spring.io/spring-security/reference/features/authentication/password-storage.html#authentication-password-storage)
+- [bcrypt 알고리즘](https://ko.wikipedia.org/wiki/Bcrypt)
+- [단방향 암호화](https://en.citizendium.org/wiki/One-way_encryption)
+- [EN.Clickjacking 공격](https://en.wikipedia.org/wiki/Clickjacking)
+- [KO.Clickjacking 공격](https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A6%AD%EC%9E%AC%ED%82%B9)
+
+
+
 ## Reference
 
 [동일 사이트 및 동일 출처 이해하기](https://web.dev/same-site-same-origin/#same-site-cross-site)
+
+[Starting Hello Spring Security Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started)
