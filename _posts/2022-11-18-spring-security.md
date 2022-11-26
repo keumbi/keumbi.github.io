@@ -4,6 +4,7 @@ author: keumbi
 date: 2022-11-18 23:20:00 +0900
 categories: [Framework, Spring]
 tags: [week14, spring, spring security]
+mermaid: true
 ---
 
 ## Overview
@@ -107,6 +108,27 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - [EN.Clickjacking 공격](https://en.wikipedia.org/wiki/Clickjacking)
 - [KO.Clickjacking 공격](https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A6%AD%EC%9E%AC%ED%82%B9)
 
+
+### 1.4. Spring Security의 웹 요청 처리 흐름
+
+- Spring Security를 애플리케이션에 적용하는데 어려움을 겪는 가장 큰 이유 중에 하나는 Spring Security의 아키텍쳐와 **Spring Security의 컴포넌트들이 어떻게 인터랙션해서 인증, 권한 등의 보안 작업을 처리하는지 이해하지 못하기 때문이다.**
+- **서블릿 필터(Servlet Filter)**는 서블릿 기반 애플리케이션의 엔드포인트에 요청이 도달하기 전에 중간에서 요청을 가로챈 후 어떤 처리를 할 수 있도록 해주는 Java의 컴포넌트이다.
+- Spring Security의 필터는 클라이언트의 요청을 중간에서 가로챈 뒤, 보안에 특화된 작업을 처리하는 역할을 한다.
+- `DelegatingFilterProxy`라는 이름에서 알 수 있듯이 **서블릿 컨테이너 영역의 필터와 ApplicationContext에 Bean으로 등록된 필터들을 연결해주는 브릿지 역할을 합니다.**
+- **Spring Security의 Filter Chain**은 Spring Security에서 **보안을 위한 작업을 처리하는 필터의 모음이며, Spring Security의 Filter를 사용하기 위한 진입점이 바로 `FilterChainProxy`입니다.**
+
+
+#### 심화 학습
+
+- [서블릿 필터](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html)
+- [Spring Security에서 지원하는 Filter](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters)
+
+### 1.5. Filter와 FilterChain
+
+
+#### Filter
+
+서블릿 필터(Servlet Filter)는 서블릿 기반 애플리케이션의 엔드포인트에 요청이 도달하기 전에 중간에서 요청을 가로챈 후 어떤 처리를 할 수 있도록 해주는 Java의 컴포넌트입니다.
 
 
 ## Reference
