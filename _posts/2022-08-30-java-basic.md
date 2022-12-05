@@ -1,7 +1,7 @@
 ---
 title: Java 기초
 author: keumbi
-date: 2022-08-23 21:20:00 +0900
+date: 2022-08-30 21:20:00 +0900
 categories: [Language, Java]
 tags: [week3, java]
 ---
