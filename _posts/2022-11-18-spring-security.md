@@ -125,7 +125,7 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - [Spring Security에서 지원하는 Filter](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters)
 
 ### 1.5. Filter와 FilterChain
-
+<!--
 ```mermaid
 flowchart LR
   subgraph Client
@@ -141,12 +141,229 @@ flowchart LR
   end
   A --> test --> B
   B1 --> B2
-```
+-->
 
 #### Filter
 
 서블릿 필터(Servlet Filter)는 서블릿 기반 애플리케이션의 엔드포인트에 요청이 도달하기 전에 중간에서 요청을 가로챈 후 어떤 처리를 할 수 있도록 해주는 Java의 컴포넌트입니다.
 
+클라이언트가 서버 측 애플리케이션으로 요청을 전송하면 제일 먼저 **Servlet Filter**를 거치게 됩니다.
+
+그리고 **Filter에서의 처리가 모두 완료되면** DispatcherServlet에서 클라이언트의 요청을 핸들러에 매핑하기 위한 다음 작업을 진행합니다.
+
+#### Filter Chain
+
+Filter Chain은 우리가 앞에서 살펴보았듯이 여러개의 Filter가 체인을 형성하고 있는 Filter의 묶음을 의합니다.
+
+#### Filter와 Filter Chain의 특성
+
+- Servlet FilterChain은 요청 URI path를 기반으로 HttpServletRequest를 처리합니다. 따라서 클라이언트가 서버 측 애플리케이션에 요청을 전송하면 서블릿 컨테이너는 요청 URI의 경로를 기반으로 어떤 Filter와 어떤 Servlet을 매핑할지 결정합니다.
+- Filter는 Filter Chain 안에서 순서를 지정할 수 있으며 지정한 순서에 따라서 동작하게 할 수 있습니다.
+- Filter Chain에서 Filter의 순서는 매우 중요하며 Spring Boot에서 여러 개의 Filter를 등록하고 순서를 지정하기 위해서는 다음과 같은 두 가지 방법을 적용할 수 있습니다.
+    1. Spring Bean으로 등록되는 Filter에 `@Order` 애너테이션을 추가하거나 `Orderd` 인터페이스를 구현해서 Filter의 순서를 지정할 수 있습니다.
+    2. `FilterRegistrationBean` 을 이용해 Filter의 순서를 명시적으로 지정할 수 있습니다.
+
+#### Filter 인터페이스
+
+**Servlet Filter의 기본 구조**
+
+```java
+public class FirstFilter implements Filter {
+     // (1) `init()` 메서드에서는 생성한 Filter에 대한 초기화 작업
+     public void init(FilterConfig filterConfig) throws ServletException {
+
+     }
+
+     // (2) `doFilter()` 메서드에서는 해당 Filter가 처리하는 실질적인 로직을 구현
+     public void doFilter(ServletRequest request,
+                          ServletResponse response,
+                          FilterChain chain)
+                          throws IOException, ServletException {
+        // (2-1) request(ServletRequest)를 이용해 다음 Filter(2-2)의 chain.doFilter(request, response)가 호출되기 전에 할 수 있는 전처리 작업에 대한 코드를 구현
+
+        // (2-2)
+        chain.doFilter(request, response);
+
+        // (2-3) response(ServletResponse)를 이용해 (2-2)의 chain.doFilter(request, response)가 호출된 이 후에 할 수 있는 후처리 작업에 대한 코드를 구현
+     }
+
+     // (3) `destroy()` 메서드는 Filter가 컨테이너에서 종료될 때 호출되는데 주로 Filter가 사용한 자원을 반납하는 처리 등의 로직을 작성
+     public void destroy() {
+        // (5) Filter가 사용한 자원을 반납하는 처리
+     }
+  }
+```
+
+#### Filter 실습 예제
+
+그럼 이제 여러분들이 직접 Filter를 만들어서 애플리케이션을 실행시킨 후, Filter가 어떤식으로 동작하는지 직접 확인해 보는 시간을 가져보도록 합시다.
+
+1️⃣ **첫 번째 Filter 구현**
+
+FirstFilter 구현 코드
+
+```java
+import javax.servlet.*;
+import java.io.IOException;
+
+public class FirstFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        Filter.super.init(filterConfig);
+        System.out.println("FirstFilter 생성됨");
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        System.out.println("========First 필터 시작========");
+        chain.doFilter(request, response);
+        System.out.println("========First 필터 종료========");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("FirstFilter Destory");
+        Filter.super.destroy();
+    }
+}
+```
+
+
+2️⃣ **FirstFilter를 적용하기 위한 FilterConfiguration 구성**
+
+FirstFilter를 등록한 FilterConfiguration
+
+```java
+import book.study.security.FirstFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class FilterConfiguration {
+
+    @Bean
+    public FilterRegistrationBean<FirstFilter> firstFilterRegister()  {
+        FilterRegistrationBean<FirstFilter> registrationBean = new FilterRegistrationBean<>(new FirstFilter());
+        return registrationBean;
+    }
+}
+```
+
+Spring Boot에서 Servlet Filter는 FilterRegistrationBean의 생성자로 Filter 인터페이스의 구현 객체를 넘겨주는 형태로 등록할 수 있습니다.
+
+3️⃣ **애플리케이션 실행**
+
+애플리케이션을 실행하면 가장 먼저 init() 메서드가 실행되면서 아래와 같은 로그가 출력되는 것을 확인할 수 있습니다.
+
+```java
+FirstFilter 생성됨
+```
+
+Controller가 있다면 해당 컨트롤러의 핸들러 메서드로 요청을 보낸다면,
+
+doFilter → controller 동작 → destroy 메서드의 형태로 Filter가 동작하면서 아마도 아래와 유사한 로그가 출력되는 것을 확인할 수 있습니다.
+
+```java
+========First 필터 시작========
+Hello
+========First 필터 종료========
+```
+
+4️⃣ **두 번째 Filter 구현**
+
+이번에는 필터를 하나 더 구현해서 총 두 개의 Filter를 적용해 보도록 하겠습니다.
+
+SecondFilter 구현 코드
+
+```java
+import javax.servlet.*;
+import java.io.IOException;
+
+public class SecondFilter implements Filter {
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        Filter.super.init(filterConfig);
+        System.out.println("SecondFilter가 생성되었습니다.");
+    }
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        System.out.println("==========Second 필터 시작==========");
+        chain.doFilter(request, response);
+        System.out.println("==========Second 필터 종료==========");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("SecondFilter가 사라집니다.");
+        Filter.super.destroy();
+    }
+}
+```
+
+[코드 4-38]
+
+코드 4-38과 같이 애플리케이션에 적용할 두 번째 Filter를 작성합니다.
+
+5️⃣ **FilterConfiguration에 두 번째 Filter 등록**
+
+SecondFilter를 등록한 FilterConfiguration
+
+```java
+import book.study.security.FirstFilter;
+import book.study.security.SecondFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Config {
+
+    @Bean
+    public FilterRegistrationBean<FirstFilter> firstFilterRegister()  {
+        FilterRegistrationBean<FirstFilter> registrationBean = new FilterRegistrationBean<>(new FirstFilter());
+        registrationBean.setOrder(1); // (1)
+        return registrationBean;
+    }
+
+    @Bean
+    public FilterRegistrationBean<SecondFilter> secondFilterRegister()  {
+        FilterRegistrationBean<SecondFilter> registrationBean = new FilterRegistrationBean<>(new SecondFilter());
+        registrationBean.setOrder(2); // (2)
+        return registrationBean;
+    }
+
+}
+```
+
+
+두 개의 Filter가 지정된 순서로 실행 되도록 (1), (2)와 같이 `registrationBean.setOrder()` 메서드로 순서를 지정할 수 있습니다.
+
+`registrationBean.setOrder()`의 파라미터로 지정한 숫자가 적은 숫자일수록 먼저 실행됩니다.
+
+애플리케이션을 다시 실행 시키고 Controller의 핸들러 메서드에 request를 전송하면 아래와 같은 실행 결과를 확인할 수 있습니다.
+
+```java
+========First 필터 시작========
+==========Second 필터 시작==========
+Hello
+==========Second 필터 종료==========
+========First 필터 종료========
+```
+
+> Filter는 나머지 Filter와 Servlet에 영향을 주기 때문에 Filter의 실행 순서가 중요!!
+
+
+
+#### 핵심 포인트
+
+- Spring Boot에서는 `FilterRegistrationBean` 을 이용해 Filter를 등록할 수 있다.
+- Spring Boot에서 등록하는 Filter는 다음과 같은 방법으로 실행 순서를 지정할 수 있다.
+  - Spring Bean으로 등록되는 Filter에 `@Order` 애너테이션을 추가하거나 `Orderd` 인터페이스를 구현해서 Filter의 순서를 지정할 수 있다.
+  - `FilterRegistrationBean` 의 setOrder() 메서드를 이용해 Filter의 순서를 지정할 수 있다.
 
 ## Reference
 
