@@ -17,22 +17,12 @@ mermaid: true
 - Spring Security 인가(또는 권한 부여, Authorization) 구성요소에 대해 이해할 수 있다.
 {: .prompt-tip }
 
-## 1. Spring security 개요
-Spring Security에서 사용하는 보안에 대한 핵심 개념과 Spring Security의 동작 방식을 살펴보겠습니다.
-
-> 학습목표
-- Spring Security가 무엇인지 이해할 수 있다.
-- Spring Security를 사용해야 하는 이유를 알 수 있다.
-- Spring Security에서 사용하는 보안에 대한 핵심 개념을 이해할 수 있다.
-- Spring Security의 기본 구조와 동작 방식을 이해할 수 있다.
-{: .prompt-tip }
-
-### 1.1. Spring Security란?
+## 1. Spring Security란?
 **Spring Security**는 Spring MVC 기반 애플리케이션의 인증(Authentication)과 인가(Authorization or 권한 부여) 기능을 지원하는 보안 프레임워크로써, Spring MVC 기반 애플리케이션에 보안을 적용하기위한 사실상의 표준입니다.
 
 Spring에서 지원하는 Interceptor나 Servlet Filter를 이용해서 보안 기능을 직접 구현할 수 있지만 웹 애플리케이션 보안을 대부분의 기능을 Spring Security에서 안정적으로 지원하고 있기 때문에 구조적으로 잘 만들어진 검증된 Spring Security를 이용하는 것이 안전한 선택이라고 볼 수 있습니다.
 
-#### Spring Security로 할 수 있는 보안 강화 기능
+### 1.1. Spring Security로 할 수 있는 보안 강화 기능
 
 - 다양한 유형(**폼 로그인 인증**, **토큰 기반 인증**, **OAuth 2 기반 인증**, LDAP 인증)의 사용자 인증 기능 적용
 - **애플리케이션 사용자의 역할(Role)에 따른 권한 레벨 적용**
@@ -43,7 +33,7 @@ Spring에서 지원하는 Interceptor나 Servlet Filter를 이용해서 보안 �
 
 이 외에도 SSO, 클라이언트 인증서 기반 인증, 메서드 보안, 접근 제어 목록(Access Control List) 같은 보안을 위한 대부분의 기능을 지원합니다.
 
-#### Spring Security에서 사용하는 용어 정리
+### 1.2. Spring Security에서 사용하는 용어 정리
 
 Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로 사용하는 개념들을 자주 접하게 됩니다.
 
@@ -61,23 +51,23 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - **Access Control(접근 제어)**
   - `Access Control`은 사용자가 애플리케이션의 리소스에 접근하는 행위를 제어하는 것을 의미합니다.
 
-#### 심화 학습
+### 심화 학습
 
 - [세션 고정(session fixation) 공격](https://owasp.org/www-community/attacks/Session_fixation)
 - [클릭재킹 공격](https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A6%AD%EC%9E%AC%ED%82%B9)
 - [CSRF](https://namu.wiki/w/CSRF)
 
-### 1.2. Spring Security를 사용해야 하는 이유
+## 2. Spring Security를 사용해야 하는 이유
 
 - 보안 기능을 밑바닥부터 직접 구현하는 것보다 잘 검증되어 신뢰할 만한 Spring Security를 사용하는 것이 더 나은 선택이다.
 - Spring Security는 특정 보안 요구 사항을 만족하기 위한 커스터마이징이 용이하고, 유연한 확장이 가능하다.
 
-#### 심화 학습
+### 심화 학습
 
 - [Apache Shiro](https://shiro.apache.org/)
 - [OACC](http://oaccframework.org/)
 
-### 1.3. Spring Security의 기본 구조
+## 3. Spring Security의 기본 구조
 
 - Spring Security의 기본 구조와 기본적인 동작 방식을 이해하기 가장 좋은 인증 방식은 **폼 로그인 인증** 방식이다.
 - Spring Security를 이용한 보안 설정은 `HttpSecurity` 를 파라미터로 가지고, `SecurityFilterChain` 을 리턴하는 Bean을 생성하면 된다.
@@ -98,7 +88,7 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - `AuthenticationProvider`는 Spring Security에서 클라이언트로부터 전달받은 인증 정보를 바탕으로 인증된 사용자인지를 처리하는 Spring Security의 컴포넌트이다.
 
 
-#### 심화 학습
+### 심화 학습
 - [SSR(Server Side Rendering) 방식의 Controller 구현 방식](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-controller)
 - [Ant Pattern](https://ant.apache.org/manual/dirtasks.html#patterns)
 - [XML Name Space](https://www.w3schools.com/xml/xml_namespaces.asp)
@@ -109,7 +99,7 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - [KO.Clickjacking 공격](https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A6%AD%EC%9E%AC%ED%82%B9)
 
 
-### 1.4. Spring Security의 웹 요청 처리 흐름
+## 4. Spring Security의 웹 요청 처리 흐름
 
 - Spring Security를 애플리케이션에 적용하는데 어려움을 겪는 가장 큰 이유 중에 하나는 Spring Security의 아키텍쳐와 **Spring Security의 컴포넌트들이 어떻게 인터랙션해서 인증, 권한 등의 보안 작업을 처리하는지 이해하지 못하기 때문이다.**
 - **서블릿 필터(Servlet Filter)**는 서블릿 기반 애플리케이션의 엔드포인트에 요청이 도달하기 전에 중간에서 요청을 가로챈 후 어떤 처리를 할 수 있도록 해주는 Java의 컴포넌트이다.
@@ -118,12 +108,12 @@ Spring Security를 적용하기 위해서는 보안 영역에서 일반적으로
 - **Spring Security의 Filter Chain**은 Spring Security에서 **보안을 위한 작업을 처리하는 필터의 모음이며, Spring Security의 Filter를 사용하기 위한 진입점이 바로 `FilterChainProxy`입니다.**
 
 
-#### 심화 학습
+### 심화 학습
 
 - [서블릿 필터](https://docs.oracle.com/javaee/7/api/javax/servlet/Filter.html)
 - [Spring Security에서 지원하는 Filter](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters)
 
-### 1.5. Filter와 FilterChain
+## 5. Filter와 FilterChain
 <!--
 ```mermaid
 flowchart LR
@@ -142,7 +132,7 @@ flowchart LR
   B1 --> B2
 -->
 
-#### Filter
+### 5.1. Filter
 
 서블릿 필터(Servlet Filter)는 서블릿 기반 애플리케이션의 엔드포인트에 요청이 도달하기 전에 중간에서 요청을 가로챈 후 어떤 처리를 할 수 있도록 해주는 Java의 컴포넌트입니다.
 
@@ -150,11 +140,11 @@ flowchart LR
 
 그리고 **Filter에서의 처리가 모두 완료되면** DispatcherServlet에서 클라이언트의 요청을 핸들러에 매핑하기 위한 다음 작업을 진행합니다.
 
-#### Filter Chain
+### 5.2. Filter Chain
 
 Filter Chain은 우리가 앞에서 살펴보았듯이 여러개의 Filter가 체인을 형성하고 있는 Filter의 묶음을 의합니다.
 
-#### Filter와 Filter Chain의 특성
+####  Filter와 Filter Chain의 특성
 
 - Servlet FilterChain은 요청 URI path를 기반으로 HttpServletRequest를 처리합니다. 따라서 클라이언트가 서버 측 애플리케이션에 요청을 전송하면 서블릿 컨테이너는 요청 URI의 경로를 기반으로 어떤 Filter와 어떤 Servlet을 매핑할지 결정합니다.
 - Filter는 Filter Chain 안에서 순서를 지정할 수 있으며 지정한 순서에 따라서 동작하게 할 수 있습니다.
@@ -195,11 +185,10 @@ public class FirstFilter implements Filter {
 
 #### Filter 실습 예제
 
-그럼 이제 여러분들이 직접 Filter를 만들어서 애플리케이션을 실행시킨 후, Filter가 어떤식으로 동작하는지 직접 확인해 보는 시간을 가져보도록 합시다.
+직접 Filter를 만들어서 애플리케이션을 실행시킨 후, Filter가 어떤식으로 동작하는지 직접 확인 할 수 있습니다.
 
 1️⃣ **첫 번째 Filter 구현**
 
-FirstFilter 구현 코드
 
 ```java
 import javax.servlet.*;
@@ -231,7 +220,6 @@ public class FirstFilter implements Filter {
 
 2️⃣ **FirstFilter를 적용하기 위한 FilterConfiguration 구성**
 
-FirstFilter를 등록한 FilterConfiguration
 
 ```java
 import book.study.security.FirstFilter;
@@ -274,8 +262,6 @@ Hello
 
 이번에는 필터를 하나 더 구현해서 총 두 개의 Filter를 적용해 보도록 하겠습니다.
 
-SecondFilter 구현 코드
-
 ```java
 import javax.servlet.*;
 import java.io.IOException;
@@ -303,13 +289,8 @@ public class SecondFilter implements Filter {
 }
 ```
 
-[코드 4-38]
-
-코드 4-38과 같이 애플리케이션에 적용할 두 번째 Filter를 작성합니다.
-
 5️⃣ **FilterConfiguration에 두 번째 Filter 등록**
 
-SecondFilter를 등록한 FilterConfiguration
 
 ```java
 import book.study.security.FirstFilter;
@@ -357,11 +338,11 @@ Hello
 
 
 
-#### 핵심 포인트
+### 핵심 포인트
 
 - Spring Boot에서는 `FilterRegistrationBean` 을 이용해 Filter를 등록할 수 있다.
 - Spring Boot에서 등록하는 Filter는 다음과 같은 방법으로 실행 순서를 지정할 수 있다.
-  - Spring Bean으로 등록되는 Filter에 `@Order` 애너테이션을 추가하거나 `Orderd` 인터페이스를 구현해서 Filter의 순서를 지정할 수 있다.
+  - Spring Bean으로 등록되는 Filter에 `@Order` 애너테이션을 추가하거나 `Orderd` 인터페이스를 구현해서 Filter의 순서를 지정할 수 있다.
   - `FilterRegistrationBean` 의 setOrder() 메서드를 이용해 Filter의 순서를 지정할 수 있다.
 
 ## Reference
