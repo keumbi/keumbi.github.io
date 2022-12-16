@@ -154,9 +154,8 @@ Filter Chain은 우리가 앞에서 살펴보았듯이 여러개의 Filter가 �
 
 #### Filter 인터페이스
 
-**Servlet Filter의 기본 구조**
-
 ```java
+//  Servlet Filter의 기본 구조
 public class FirstFilter implements Filter {
      // (1) `init()` 메서드에서는 생성한 Filter에 대한 초기화 작업
      public void init(FilterConfig filterConfig) throws ServletException {
@@ -183,7 +182,7 @@ public class FirstFilter implements Filter {
   }
 ```
 
-#### Filter 실습 예제
+### Filter 실습 예제
 
 직접 Filter를 만들어서 애플리케이션을 실행시킨 후, Filter가 어떤식으로 동작하는지 직접 확인 할 수 있습니다.
 
@@ -334,7 +333,7 @@ Hello
 ========First 필터 종료========
 ```
 
-> Filter는 나머지 Filter와 Servlet에 영향을 주기 때문에 Filter의 실행 순서가 중요!!
+**Filter는 나머지 Filter와 Servlet에 영향을 주기 때문에 Filter의 실행 순서가 중요!!**
 
 
 
