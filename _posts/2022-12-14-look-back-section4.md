@@ -1,60 +1,42 @@
 ---
-title: Section 3 회고
+title: Section 4회고
 author: keumbi
-date: 2022-11-16 21:20:00 +0900
+date: 2022-12-14 21:20:00 +0900
 categories: [Look back, Section]
-tags: [look back, third, code states]
+tags: [look back, fourth, code states]
 mermaid: true
 ---
 
-![O.M.G](https://media3.giphy.com/media/fYHYzEQIY91P7MyKVW/giphy.gif){: .shadow style="max-width: 80%" }
+![O.M.G](https://media3.giphy.com/media/xT4uQyZJVKYYHmFqIU/giphy.gif){: .shadow style="max-width: 80%" }
 _Great job!! but I'm dizzy..._
 
 ## Overview
-섹션 3... Spring 순삭!!
+섹션 4... Spring 순삭!!
 
 ```mermaid
 graph LR
-A[Section 3] --> B(API 계층)
-B --> B1(Controller 요청 처리)
-B --> B2(DTO) --> B21(JSON <-> DTO)
-B2(DTO) --> B22(유효성 검증)
-B --> B3(Rest Client)
-B --> B4(Spring에서 HTTP Header 사용법)
-B -->|assignment| B5[Controller, DTO]
-A --> C(서비스 계층) --> C1(API 계층 <-> 서비스 계층 연동 by Dependency Injection)
-C --> C2(DTO <-> 도메인 엔티티 매핑)
-C1 --> C11(데이터 엑세스 연동은 아직...x)
-C2 --> C21(Mapper 사용 방법)
-C --> |assignment| C3[API 계층과 서비스 계층 연동]
-A --> D(예외 처리) --> D1(Controller에서의 예외 처리)
-D --> D2(AOP를 이용한 공통 예외 처리)
-D --> D3(비지니스적인 예외 처리)
-D --> |assignment| D4[예외 처리]
-A --> E(데이터 엑세스 계층) --> E1(데이터베이스 연동)
-E --> E2(Object-Relational Mapping) --> E21(Spring Data JDBC)
-E2 --> E22(JPA)
-E2 --> E23(Spring Data JPA)
-E --> |assignment| E3[Spring Data JDBC]
-E --> |assignment| E4(Spring Data JPA)
-A --> F(트렌젝션) --> F1(트렌젝션 개념)
-F --> F1(트렌젝션 개념)
-F --> F2(Spring에서 로컬 트랜잭션 적용법)
-F --> F3(Spring에서 분산 트랜잭션 적용법)
-F -->|assignment| F4(트렌젝션)
-A --> G(테스팅) --> G1(테스트가 필요한 이유)
-G --> G2(유닛 테스트)
-G --> G3(슬라이스 테스트)
-G --> G4(hemcrest 사용법)
-G --> G5(Mockito 개념 및 사용법)
-G --> G6(TDD 개요)
-G --> |assignment| G7(테스팅)
-A --> H(API 문서화) --> H1(API 문서화가 필요한 이유)
-H --> H2(Spring RestDocs를 이용한 API 문서 자동화)
-H --> H3(Swagger...학습은 x)
-H --> |assignment| API(문서화 실습 과제)
-A --> I(애플리케이션 빌드/실행/배포) --> I1(Spring에서의 Orofile 적용법)
-I -->|assignment| I2[애플리케이션 빌드 실습 과제]
+A[Section 4] --> B(웹 애플리케이션 보안)
+B --> B1(인증/보안 기초) --> B11(HTTPS)
+B1 --> B12(Hashing)
+B1 --> B13(Cookie)
+B1 --> B14(Session)
+B1 --> B15(웹 보안 공격)
+B --> B2(Spring Security Basic) --> B21(Hello Spring Security 애플리케이션 구현)
+B2 --> B23(Spring Security 컴포넌트)
+B2 --> B24(JWT 개념)
+B2 --> B25(JWT 생성/갱신/검증)
+B2 --> B26(JWT를 이용한 애플리케이션 자격 검증)
+B2 --> B27(Oauth 2 개념)
+B2 --> B28(Oauth 2를 이용한 인증)
+A --> C(Spring WebFlux) --> C1(리엑티브 프로그래밍이란?)
+C --> C2(Reactive Streams?)
+C --> C3(Project Reactor Basic) --> C31(Mono)
+C3 --> C32(Flux)
+C --> C4(Spring WebFlux Basic) --> C41(Spring MVC VS. Spring WebFlux)
+C4 --> C42(Blocking I/O VS. Not-Blocking I/O)
+C4 --> C43(Spring WebFlux 기술 적용)
+A --> D(클라우드 서비스 가상화)
+A --> E(솔로 프로젝트: 웹애플리케이션 설계)
 ```
 
 KPT를 기반으로 작성해 보겠다.
@@ -73,7 +55,7 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
 2. 시급하지만 시도하는 데 시간이 걸리거나, 빠르게 시도가 가능하지만 시급하지 않은 것
   * 노션에 정리한 내용 중 한가지 이상 블로그에 작성
   * 인프런 강좌 하루에 1강
-  * 운동!! 자유 수영 50분 주 3회!! 못 가는 날 요가 30분!!
+  * 운동!! 요가 30분!!
   * 알고리즘문제 하루에 1개씩 풀기
 3. 시급하지 않고 시도하는데 시간이 걸리는 것
   * 책읽기 읽고 싶은 책, 읽고 있는 책, 읽은 책 노션에 체크 (개발 서적 위주로!! ㅠㅠ)
@@ -81,6 +63,7 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
 
 
 ## 2. Keep, Problem
+
 ### 2.1. Keep 작성을 위한 질문
 >목표를 달성하기 위해 시도했던 것 중 가장 효과적이었던 노력은 무엇인가요?<br>
 >목표를 달성하기 위해 했던 모든 노력 중 반드시 유지해야 할 것은 무엇인가요?
@@ -91,6 +74,7 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
 * 매일 운동 30분 이상
 
 ### 2.2. Problem 작성을 위한 질문
+
 >목표를 달성하기 위해 세웠던 계획 중 가장 유지하기 어려웠던 것은 무엇인가요?<br>
 >목표를 달성하는 데 있어서 가장 큰 장애물은 무엇인가요?
 
@@ -137,9 +121,11 @@ Try: Problem을 해결할 수 있도록 실천해 보았으면 하는 부분
    * 매주 4L로 체크하는 시간 갖기
 
 
-## 섹션 3 총평
-위에 내용은 섹션 2와 동일하다. 섹션 2 보다 열심히 했다고 나름 만족했었는데... 시간은 또... 순식간에 지나갔다.
-남은 섹션 4 기간에 시간을 알차게 사용해야겠다. 기존 내용 정리해서 꼭 올리기! 6:30에 기상 미션 꼭!!! 한 달간 진행해 보자!!
+## 섹션 4 총평
+위에 내용은 섹션 3과 동일하다. 3주 정도 기상 미션을 진행했었는데, 꾸준히 진행해서 새벽에 알찬 시간을 보낼 수 있었던 거 같다. 써프라이즈 우수 참가자 커피 쿠폰도 받았다~~ 예쓰!! 더불어 아침을 부지런히 보냈다는 마을의 위안... :)
+
+다음 섹션인 프리 프로젝트의 압박이 계속 마음을 무겁게 하지만, 꾸준히 조금씩 조금씩 성장하고 있는 모습에 힘을 내보려 한다! 함께 참여하고 있는 동료들 분위기도 너무 좋고, 떨리는 마음으로 프리 프로젝트를 기다려 봐야겠다.
+
 아래 내용 다시 살펴보고 체크하기!!
 
 Spring MVC
@@ -152,6 +138,18 @@ Spring MVC
 - [ ]  테스팅 (Testing)
 - [ ]  API 문서화
 - [ ]  애플리케이션 빌드/ 실행/ 배포
+- [ ]  [인증/보안]기초
+- [ ]  [Spring Security] Spring Security 기본
+- [ ]  [Spring Security] JWT 인증(Authentication)
+- [ ]  [Spring Security] OAuth2 인증(Authentication)
+- [ ]  [Spring WebFlux] 리액티브 프로그래밍
+- [ ]  [Spring WebFlux] Project Reactor
+- [ ]  [Spring WebFlux] Spring WebFlux
+- [ ]  [Cloud] 운영 환경 구성
+- [ ]  [Cloud] 배포 컨테이너
+- [ ]  [Cloud] 배포 자동화
+- [ ]  [Cloud] 운영전략
+- [ ]  [Solo Project]
 
 ## Reference
 [우아한형제들 기술블로그- 팀 문화의 탄생](https://techblog.woowahan.com/2677/)
