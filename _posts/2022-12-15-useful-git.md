@@ -165,9 +165,9 @@ git reset HEAD~n # 현재로 부터 n 번째 이전 커밋으로 되돌리기
 git reset [커밋 해시]
 
 # reset option
-git reset --soft [커밋ID]# head 만 바뀜
-git reset --mixed [커밋ID]# staging 도 그 때로 바뀜
-git reset --hard [커밋ID]# working디렉토리/staging 모두 그 때로 바꿈
+git reset --soft [커밋ID] # head 만 바뀜
+git reset --mixed [커밋ID] # staging 도 그 때로 바뀜
+git reset --hard [커밋ID] # working디렉토리/staging 모두 그 때로 바꿈
 ```
 
 지정한 커밋 해시의 변경 이력을 취소
@@ -201,7 +201,7 @@ git branch [브랜치명]
 
 ```bash
 git checkout [브랜치명]
-git checkout -b [브랜치명]# 브랜치만들고 바로 이동
+git checkout -b [브랜치명] # 브랜치만들고 바로 이동
 ```
 
 브랜치 삭제
@@ -228,12 +228,12 @@ git add .
 git log--branches --graph
 ```
 
-[브랜치명]을 master 브랜치와 병합 //
+[브랜치명]을 master 브랜치와 병합
 
 ```bash
 git merge [브랜치명]
-git merge [브랜치명] --edit// 병합 후 바로 vi 편집기가 나오면서 커밋 메시지 수정 가능
-git merge [브랜치명] --no-edit// 커밋 메시지 수정없이 바로 병합
+git merge [브랜치명] --edit # 병합 후 바로 vi 편집기가 나오면서 커밋 메시지 수정 가능
+git merge [브랜치명] --no-edit # 커밋 메시지 수정없이 바로 병합
 ```
 
 merge 취소하기
@@ -248,7 +248,7 @@ git merge--abort
 
 ```bash
 git remote add origin [github 레포지 주소]
-git remote add origin [branch 이름]   #없으면 생성됨
+git remote add origin [branch 이름]   # 없으면 생성됨
 ```
 
 원격 저장소에 연결됐는지 확인
@@ -283,13 +283,17 @@ SSH 키를 생성함
 ssh-keygen
 ```
 
-원격 저장소 복제하기첫번째 커밋이 아니라면 풀 먼저하기`$ git remote remove origin`원격 저장소를 [지역저장소명]에 복제하기
+원격 저장소 복제하기첫번째 커밋이 아니라면 풀 먼저하기
+```bash
+git remote remove origin
+```
+원격 저장소를 [지역저장소명]에 복제하기
 
 ```bash
 git clone [원격 저장소 주소]
 ```
 
-원격 저장소의 커밋을 가져오기만 하고 merge하지 않는다가져온 branch 내용은 origin/[브랜치] 로 저장됨
+원격 저장소의 커밋을 가져오기만 하고 merge하지 않고, 가져온 branch 내용은 origin/[브랜치] 로 저장됨
 
 ```bash
 git fetch
@@ -409,6 +413,4 @@ git show Version_2
 
 ## Reference
 
-[동일 사이트 및 동일 출처 이해하기](https://web.dev/same-site-same-origin/#same-site-cross-site)
-
-[Starting Hello Spring Security Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started)
+[명령어 모음](https://gorokke.tistory.com/22)
