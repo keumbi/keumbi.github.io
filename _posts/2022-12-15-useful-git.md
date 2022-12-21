@@ -134,7 +134,9 @@ git commit -a -m "[메시지명]"
 커밋 내역 확인
 
 ```bash
-git log$ git log --pretty=oneline # 한줄로 표기하기
+git log
+
+git log --pretty=oneline # 한줄로 표기하기
 
 git show [커밋 id] # 특정 커밋 내역 확인
 ```
