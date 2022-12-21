@@ -1,5 +1,5 @@
 ---
-title: 터미널, 깃 명령어 정리
+title: Terminal, git 명령어 총정리
 author: keumbi
 date: 2022-12-15 23:20:00 +0900
 categories: [How to...]
