@@ -1,11 +1,9 @@
 ---
-title: Spring Security
+title: 터미널, 깃 명령어 정리
 author: keumbi
 date: 2022-12-15 23:20:00 +0900
 categories: [How to...]
 tags: [week18, spring, spring security]
-mermaid: true
-published: false
 ---
 
 ## Overview
