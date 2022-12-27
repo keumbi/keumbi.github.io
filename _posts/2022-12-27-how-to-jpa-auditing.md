@@ -53,40 +53,7 @@ public abstract class BaseTimeEntity{
 | @CreatedDate | Entity가 생성되어 저장될 때 시간이 자동 저장 |
 | @LastModifiedDate | 조회한 Entity의 값을 변경할 때 시간이 자동 저장 |
 
-### 1.3. 클래스 상속
-
-**Posts.java**
-
-```java
-@Getter
-@NoArgsConstructor
-@EntitypublicclassPostsextendsBaseTimeEntity {
-
-  @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-
-  @Column(length =500, nullable =false)
-  private String title;
-
-  @Column(columnDefinition ="TEXT", nullable =false)
-  private String content;
-
-  private String author;
-
-  @BuilderpublicPosts(String title, String content, String author) {
-    this.title = title;
-    this.content = content;
-    this.author = author;
-  }
-
-  public void update (String title, String content) {
-    this.title = title;
-    this.content = content;
-  }
-}
-```
-
-### JPA Auditing 활성화
+### 1.3. JPA Auditing 활성화
 
 ```java
 @EnableJpaAuditing
