@@ -4,7 +4,6 @@ author: keumbi
 date: 2022-12-15 23:20:00 +0900
 categories: [How to...]
 tags: [week18, spring, git, terminal]
-published: false
 ---
 
 ## Overview

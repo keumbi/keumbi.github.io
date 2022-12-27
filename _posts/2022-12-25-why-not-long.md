@@ -4,7 +4,6 @@ author: keumbi
 date: 2022-12-25 22:20:00 +0900
 categories: [Error Handling Log]
 tags: [week20, spring, jpa]
-published: false
 ---
 
 ## 이슈
@@ -57,7 +56,7 @@ Null을 한번 더 체크 해야한다.
 **2) request로도 null이 들어올 때**
 
 - Requeset 들어오는 값이 Null일 수 있기에 WrapperClass로 받아 줄 수있긴 하다.
-- request같은 경우는 -> @validate, @NotNull같은 거로, 사전에 차단하는게 좋은 방법일 수 있다.
+- request같은 경우는 @validate, @NotNull같은 거로, 사전에 차단하는게 좋은 방법일 수 있다.
 
 ## Reference
 [기본타입 vs 참조타입 with 래퍼클래스를 사용해야할 때 ➡️ Integer Wrapper Class 보다 int기본 타입](https://thalals.tistory.com/330)
