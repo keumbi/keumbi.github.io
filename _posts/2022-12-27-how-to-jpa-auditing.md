@@ -1,7 +1,7 @@
 ---
 title: JPA Auditing
 author: keumbi
-date: 2022-12-27 23:20:00 +0900
+date: 2022-12-27 21:20:00 +0900
 categories: [How to...]
 tags: [week20, spring, jpa]
 published: false
