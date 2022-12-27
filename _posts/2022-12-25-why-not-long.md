@@ -4,7 +4,7 @@ author: keumbi
 date: 2022-12-25 22:20:00 +0900
 categories: [Error Handling Log]
 tags: [week20, spring, jpa]
-published: false
+#published: false
 ---
 
 ## 이슈

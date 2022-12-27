@@ -3,7 +3,7 @@ title: Terminal, git 명령어 총정리
 author: keumbi
 date: 2022-12-15 23:20:00 +0900
 categories: [How to...]
-tags: [week18, spring, spring security]
+tags: [week18, spring, git, terminal]
 ---
 
 ## Overview
