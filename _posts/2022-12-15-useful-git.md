@@ -397,7 +397,7 @@ git stash pop
 
 ### 7. 기타 명령어
 
-긴 명령어 짧게 이름 붙여 사용하기 eg) git log --pretty=oneline을->git history 라는 별명으로 바꾸기.
+긴 명령어 짧게 이름 붙여 사용하기 eg) git log --pretty=oneline을 git history 라는 별명으로 바꾸기.
 
 ```bash
 git config alias.[별명]'원하는 명령어'
