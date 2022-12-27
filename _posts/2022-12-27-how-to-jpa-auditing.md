@@ -29,7 +29,7 @@ compile('org.springframework.boot:spring-boot-starter-data-jpa')
 기본적으로 스프링 부트에서 gradle로 의존성을 관리하게 될 경우 `spring-boot-starter-data-jpa`만 추가해도 Audit을 하는데는 문제가 없습니다.
 
 > 참고로 자바 1.8 이상부터는 기존의 문제가 있던 Date, Calander 클래스를 사용하지 않고 LocalDate, LocalDateTime 클래스를 사용합니다. 또한 LocalDateTime 객체와 테이블 사이의 매핑이 안되던 이슈는 하이버네이트 5.2 버전부터 해결이 되었습니다.
->
+
 
 ### 1.2. BaseTimeEntity.java
 
