@@ -4,7 +4,6 @@ author: keumbi
 date: 2023-02-10 21:20:00 +0900
 categories: [How to...]
 tags: [update, ruby, mac]
-published: false
 ---
 
 ## Overview
@@ -74,4 +73,4 @@ eval "$(rbenv init - zsh)"
 
 ## Reference
 
-https://hee-dev.tistory.com/10
+[https://hee-dev.tistory.com/10](https://hee-dev.tistory.com/10)
