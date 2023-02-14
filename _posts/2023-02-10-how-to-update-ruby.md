@@ -73,4 +73,4 @@ eval "$(rbenv init - zsh)"
 
 ## Reference
 
-[https://hee-dev.tistory.com/10](https://hee-dev.tistory.com/10)
+[Ruby rbenv 설치](https://developak.tistory.com/entry/Ruby-%EB%A3%A8%EB%B9%84-rbenv-%EC%84%A4%EC%B9%98)
