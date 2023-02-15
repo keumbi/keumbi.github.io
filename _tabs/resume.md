@@ -1,10 +1,9 @@
 ---
 # the default layout is 'page'
 layout: resume
-icon: fas fa-id-badge
+icon: fas fa-file-text
 order: 5
 published: false
-
 ---
 
 
@@ -30,14 +29,8 @@ JAVA 백엔드 개발자
 호주에서 마케팅 공부를 하며, 온라인 마케팅 업무를 진행했었습니다. AI와 빅 데이터에 관심이 생겨 백엔드 기술을 배우기 위해 코드스테이츠 백엔드 부트캠프 과정을 수료했습니다. 수료 이후엔 취업 준비와 부트캠프에서 프로젝트 팀원들과 메인 프로젝트에서 추가하지 못했던 기능들을 바탕으로 새로운 프로젝트 진행을 하고 있습니다. 사람들과 소통하는 것을 좋아하며, 주도적으로 업무를 진행할 수 있습니다.
 
 
-- 1일 1커밋, 매일 성장하는 개발자가 되기 위해 꾸준하게 학습합니다.
-- 주어진 과제는 시간 내 완수하기 위해 책임감을 갖고 최선을 다합니다.
-- 새로운 도전을 즐기며 긍정적인 에너지를 보유하고 있습니다.
 
 ![Keumbi's Github chart](http://ghchart.rshah.org/keumbi){: .git-chart }
-
-
-
 
 
 ## Skills
@@ -203,7 +196,7 @@ Backend software engineering, K-Digital trining (41기)
 
 2020.01 - 2018.01
 
-### **Australis Institute of Technology and Education**
+### Australis Institute of Technology and Education
 
 Advanced Diploma of Marketing and Communication
 
