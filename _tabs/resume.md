@@ -17,14 +17,12 @@ JAVA 백엔드 개발자
 - Blog: [https://keumbi.github.io/](https://keumbi.github.io/)
 
 
-
 ## About Me
 
 
 ### Java, Spring 개발이 가능한 백엔드 개발자 박금비입니다.
 
 디지털 에이전시에서 프론트엔드팀에서 팀 리더로 근무하며, 웹사이트 구축 PO로 참여한 경험이 있어 웹사이트 구축과 관련된 전반적인 흐름을 잘 이해하고 있습니다.
-
 
 호주에서 마케팅 공부를 하며, 온라인 마케팅 업무를 진행했었습니다. AI와 빅 데이터에 관심이 생겨 백엔드 기술을 배우기 위해 코드스테이츠 백엔드 부트캠프 과정을 수료했습니다. 수료 이후엔 취업 준비와 부트캠프에서 프로젝트 팀원들과 메인 프로젝트에서 추가하지 못했던 기능들을 바탕으로 새로운 프로젝트 진행을 하고 있습니다. 사람들과 소통하는 것을 좋아하며, 주도적으로 업무를 진행할 수 있습니다.
 
@@ -88,6 +86,18 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 - Spring Security와 JWT를 활용한 인증, 인가 및 권한 설정
 
 ## Work Experience & Projects
+
+### Imventure 24
+
+경영지원팀
+
+2020.02 - 2021.07
+
+### VTxBTS (2020)
+
+- 웹사이트 구축, 인스타그램, 페이스북 그룹 생성 및 운영
+- [https://www.vtxbts.com.au/](https://www.vtxbts.com.au/)
+- [https://www.instagram.com/vtxbts_au/](https://www.instagram.com/vtxbts_au/)
 
 ### 아지앙스코리아(주)
 
