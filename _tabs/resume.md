@@ -120,12 +120,12 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 ### Dior Korea e-Commerce platform (2016)
 
 - QA.
-- [https://www.dior.com/ko_kr?gclid=CjwKCAiAioifBhAXEiwApzCztopwIrbGBiVx0rmm8xGN5trLks8g-B0-P0dMu06Zq06MrB6Z3x2wwxoCXTsQAvD_BwE](https://www.dior.com/ko_kr?gclid=CjwKCAiAioifBhAXEiwApzCztopwIrbGBiVx0rmm8xGN5trLks8g-B0-P0dMu06Zq06MrB6Z3x2wwxoCXTsQAvD_BwE)
+- [https://www.dior.com/ko_kr](https://www.dior.com/ko_kr)
 
 ### 3M Consumer care (2016-2017)
 
 - Front-end development of website and Maintenance.
-- [https://consumercare.3m.co.kr/index.do](https://consumercare.3m.co.kr/index.do)
+- [https://consumercare.3m.co.kr/](https://consumercare.3m.co.kr)
 
 ### Eucerin (2015-2016)
 
@@ -143,12 +143,12 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 ### Kolon Hotel Cappuccino (2015)
 
 - Project Management and front-end development of the website.
-- [https://hotelcappuccino.co.kr/en/](https://hotelcappuccino.co.kr/en/)
+- [https://hotelcappuccino.co.kr/](https://hotelcappuccino.co.kr/)
 
 ### KSWRC (2014)
 
 - Project Management and front-end development of the website.
-- [https://kswrc.kasi.re.kr/ko/main](https://kswrc.kasi.re.kr/ko/main)
+- [https://kswrc.kasi.re.kr/](https://kswrc.kasi.re.kr/)
 
 ### AmorePacific (2014)
 
@@ -220,7 +220,6 @@ Certificate IV in Marketing and Communication
 
 실무 영어 전공
 
-- 어린이 영어 지도사 자격 취득
 
 ---
 
