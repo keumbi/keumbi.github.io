@@ -153,7 +153,7 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 ### AmorePacific (2014)
 
 - Revamp and front-end development of website on CQ5.
-- [https://www.apgroup.com/int/ko/index.html](https://www.apgroup.com/int/ko/index.html)
+- [https://www.apgroup.com/](https://www.apgroup.com/)
 
 ### Loreal (2014)
 
@@ -175,8 +175,7 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 ### S-Oil Total Lubricants Co., Ltd. (2012)
 
 - Revamp and front-end development of the website.
-- [https://www.stlc.co.kr/main.do](https://www.stlc.co.kr/main.do)
-
+- [https://www.stlc.co.kr/](https://www.stlc.co.kr/)
 
 
 ### 양우프로세스
