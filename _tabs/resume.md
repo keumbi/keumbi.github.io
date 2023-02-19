@@ -27,7 +27,6 @@ JAVA 백엔드 개발자
 호주에서 마케팅 공부를 하며, 온라인 마케팅 업무를 진행했었습니다. AI와 빅 데이터에 관심이 생겨 백엔드 기술을 배우기 위해 코드스테이츠 백엔드 부트캠프 과정을 수료했습니다. 수료 이후엔 취업 준비와 부트캠프에서 프로젝트 팀원들과 메인 프로젝트에서 추가하지 못했던 기능들을 바탕으로 새로운 프로젝트 진행을 하고 있습니다. 사람들과 소통하는 것을 좋아하며, 주도적으로 업무를 진행할 수 있습니다.
 
 
-
 ![Keumbi's Github chart](http://ghchart.rshah.org/keumbi){: .git-chart }
 
 
@@ -196,7 +195,7 @@ e-Biz/대리
 
 ### 코드스테이츠 (Code States)
 
-Backend software engineering, K-Digital trining (41기)
+Backend software engineering, K-Digital training (41기)
 
 - Java, 데이터베이스, Spring Core, Spring MVC, Spring Security, Cloud  과정 학습
 - 페어 프로그래밍과 코드 리뷰 경험
