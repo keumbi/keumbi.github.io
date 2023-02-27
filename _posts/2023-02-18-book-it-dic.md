@@ -1,8 +1,8 @@
 ---
 title: IT 5분 잡학 사전
 author: keumbi
-date: 2023-02-17 21:20:00 +0900
-categories: [Book]
+date: 2023-02-18 21:20:00 +0900
+categories: [Book, IT 5분 잡학사전]
 tags: [코딩, 개발자, 노마드북클럽, 노개북]
 ---
 
@@ -121,4 +121,5 @@ C++ → 절차 지향, 객체 지향
 ## Reference
 
 [IT 5분 잡학 사전](https://product.kyobobook.co.kr/detail/S000061897447)
+
 [노션정리](https://valiant-exoplanet-104.notion.site/0b9bb680e3844120bbbbac44afe77b83?v=cccd392d301642e0a5458e07a376a24f)
