@@ -10,37 +10,42 @@ published: false
 
 # 박금비
 
-JAVA 백엔드 개발자
+---
 
-- E-mail: keumbi.p@gmail.com
+- E-mail: [keumbi.p@gmail.com](mailto:keumbi.p@gmail.com)
 - Github: [https://github.com/keumbi](https://github.com/keumbi)
 - Blog: [https://keumbi.github.io/](https://keumbi.github.io/)
 
 
 ## About Me
 
+---
 
-### Java, Spring 개발이 가능한 백엔드 개발자 박금비입니다.
+마케팅 주력 디지털 에이전시에서 프론트엔드팀에서 팀 리더로 근무하며, 웹사이트 구축 PO로 참여한 경험이 있어 웹사이트 구축과 관련된 전반적인 흐름을 잘 이해하고 있습니다.
 
-마케팅 주력 디지털 에이전시에서 프론트엔드팀에서 팀 리더로 근무하며, 웹사이트 구축 PO로 참여한 경험이 있어 웹사이트 구축과 관련된 전반적인 흐름을 잘 이해하고 있습니다. 호주에서 마케팅 공부를 하며, 웹사이트 구축, 온라인 마케팅 업무 전체를 혼자서 진행했습니다. AI와 빅 데이터에 관심이 생겨 백엔드 기술을 배우기 위해 코드스테이츠 백엔드 부트캠프 과정을 수료했습니다. 수료 이후엔 취업 준비와 부트캠프에서 프로젝트 팀원들과 메인 프로젝트에서 추가하지 못했던 기능들을 바탕으로 새로운 프로젝트 진행을 하고 있습니다.
+호주에서 마케팅 공부를 하며, 웹사이트 구축, 온라인 마케팅 업무 전체를 혼자서 진행했습니다. AI와 빅 데이터에 관심이 생겨 백엔드 기술을 배우기 위해 코드스테이츠 백엔드 부트캠프 과정을 수료했습니다. 수료 이후엔 취업 준비와 부트캠프에서 프로젝트 팀원들과 메인 프로젝트에서 추가하지 못했던 기능들을 바탕으로 새로운 프로젝트 진행을 하고 있습니다.
 
-1) Jira, Zeplin, GitHub 다양한 협업 툴 사용
-2) 앱/웹 서비스 대응 능력
-3) 사업, 기술, UX 분석을 바탕으로 제품 기획 및 QA 개발
-4) 다양한 스택 (Front-end, Back-end, 마케팅, 기획) 실무 경험
+1. Jira, Zeplin, GitHub 다양한 협업 툴 사용
+2. 앱/웹 서비스 대응 능력
+3. 사업, 기술, UX 분석을 바탕으로 제품 기획 및 QA 개발
+4. 다양한 스택 (Front-end, Back-end, 마케팅, 기획) 실무 경험
 
 
 ![Keumbi's Github chart](http://ghchart.rshah.org/keumbi){: .git-chart }
 
 
 ## Skills
+
 ---
-Backend: Java, Spring Security, Spring Boot, JPA, Spring MVC, Gradle
-Frontend: HTML5, CSS3(SCSS), JavaScript, jQuery
-DevOps: AWS(EC2, RDS S3), MySQL, Nginx
-Others: IntelliJ, Git & GitHub, Slack & Notion, Jira, Zeplin
+
+- Backend: Java, Spring Security, Spring Boot, JPA, Spring MVC, Gradle
+- Frontend: HTML5, CSS3(SCSS), JavaScript, jQuery
+- DevOps: AWS(EC2, RDS S3), MySQL, Nginx
+- Others: IntelliJ, Git & GitHub, Slack & Notion, Jira, Zeplin
 
 ## Personal Experience & Projects
+
+---
 
 2023.01 - 2023.02
 코드스테이츠
@@ -61,6 +66,8 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 
 ## Work Experience & Projects
 
+---
+
 ### Imventure 24
 
 경영지원팀
@@ -75,6 +82,9 @@ OTT를 소비하는 소비자들의 콘텐츠 선택을 줄이기 위해 도움�
 - 방방콘 팬미팅 시드니 현장에서 판매 부스 확보 판매 인력 투입 매출 초과 달성
 - 웹사이트: [https://www.vtxbts.com.au](https://www.vtxbts.com.au/)
 - 인스타그램: [https://www.instagram.com/vtxbts_au](https://www.instagram.com/vtxbts_au/)
+
+
+
 
 ### 아지앙스코리아(주)
 
