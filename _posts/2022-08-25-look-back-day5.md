@@ -1,7 +1,7 @@
 ---
 title: Section1, Week2, Day 5 TIL
 author: keumbi
-date: 2022-08-24 21:20:00 +0900
+date: 2022-08-25 21:20:00 +0900
 categories: [Look back, Day]
 tags: [week2, html, css, page layout ]
 ---
@@ -43,7 +43,7 @@ HTML과 CSS를 사용해서 간단한 트위틀러(Twittler) 목업을 만들기
 ## 1. 목업
 👉 오븐 목업 [페이지 이동하기](https://codesandbox.io/s/twittler-forked-me0kc1?file=/index.html)
 
-![img.png](/assets/img/img-html-mock.png){: .shadow style="max-width: 90%" }
+c
 
 ![img_1.png](/assets/img/img-html-mock2.png){: .shadow style="max-width: 90%" }
 
