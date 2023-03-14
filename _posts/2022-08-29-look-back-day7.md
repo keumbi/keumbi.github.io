@@ -4,7 +4,6 @@ author: keumbi
 date: 2022-08-29 21:20:00 +0900
 categories: [Look back, Day]
 tags: [week3, git]
-published: false
 ---
 
 ## Daily to-do list
@@ -73,17 +72,15 @@ published: false
 
 ## 1. 버전관리시스템 Git
 
-Git- 파일 관리 프로그램 (버전 관리, 백업, 협업)
+**Git:** 파일 관리 프로그램 (버전 관리, 백업, 협업)
 
-버전 관리: Git 관리하는 디렉토리(폴더)에 어떤 문서를 만들면 Git으로 그 문서의 버전을 관리할 수 있음
-
-백업하기: 온라인 원격 저장소에 백업할 수 있음
-
-협업하기: 여러 작업자가 하나의 작업물의 다른 부분을 각자 작업할 때, 작업물을 공유하고 취합할 수 있게 도와줌
+- 버전 관리: Git 관리하는 디렉토리(폴더)에 어떤 문서를 만들면 Git으로 그 문서의 버전을 관리할 수 있음
+- 백업하기: 온라인 원격 저장소에 백업할 수 있음
+- 협업하기: 여러 작업자가 하나의 작업물의 다른 부분을 각자 작업할 때, 작업물을 공유하고 취합할 수 있게 도와줌
 
 [https://www.youtube.com/watch?v=2ReR1YJrNOM](https://www.youtube.com/watch?v=2ReR1YJrNOM)
 
-Github: Git Repository를 관리할 수 있는 클라우드 기반 서비스 , Git이 설치되어 있는 클라우드 저장소
+**Github:** Git Repository를 관리할 수 있는 클라우드 기반 서비스 , Git이 설치되어 있는 클라우드 저장소
 
 **버전 관리를 사용하는 이유**
 
@@ -93,7 +90,7 @@ Github: Git Repository를 관리할 수 있는 클라우드 기반 서비스 , G
 4. 협업 하기 좋다.
 5. 백업용
 
-Git 장점: 소스 코드 변경 이력 쉽게 확인 가능, 특정 시점에 저장된 버전과 비교 가능, 특정 시점으로 되돌아갈 수 있음
+Git의 주요 기능 소스 코드 변경 이력 쉽게 확인 가능, 특정 시점에 저장된 버전과 비교 가능, 특정 시점으로 되돌아갈 수 있음
 
 **Git은 로컬에서 버전 관리해주는 프로그램, Github은 Git을 클라우드 방식으로 구현한 서비스**
 ![git pull request](https://image.slidesharecdn.com/githubpull-request-150905094316-lva1-app6892/75/github-how-to-pull-request-1-2048.jpg){: .shadow style="max-width: 90%" }
@@ -113,7 +110,7 @@ Git 장점: 소스 코드 변경 이력 쉽게 확인 가능, 특정 시점에 �
 
 **스냅샷:** 특정 시점에 생성된 백업 복사본
 
-**commit:** 하나하나 스냅샷을 만들어 주는 작업
+**Commit:** 하나하나 스냅샷을 만들어 주는 작업
 
 **Fork:** 프로젝트에 contribute 하기 위해 원격 저장소(Remote Repository)를 내 원격 저장소로 가지고 오는 작업
 
@@ -128,318 +125,131 @@ Git 장점: 소스 코드 변경 이력 쉽게 확인 가능, 특정 시점에 �
 
 ## 2. Git 설치
 
-Git 설치- git for windows 검색 & 설치
+Git 설치: git for windows or mac 검색 & 설치
 
-[Git 최초 설정](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95)
 
-SSH 키 생성
+### 2.1. Git 환경 설정
 
-공개키 복사
+**사용자 정보**
 
-공개키 등록
+Git을 설치하면 가장 먼저, 사용자 이름과 이메일 주소를 설정합니다. 설정에 기록된 사용자 이름과 메일 주소를 앞으로 진행할 Git 커밋 내역에 기록합니다.
+
+터미널 화면에 다음과 같이 입력하세요.
+```shell
+git config --global user.name "username" # 사용자 이름
+git config --global user.email "user@email.com" # 내 이메일 주소
+```
+-global 옵션으로 설정하면, 사용자 홈에 저장되므로 git을 설정할 때 처음에 단 한 번만 입력해도 됩니다. 나중에 github의 사용자 이름이나 이메일을 변경한다면, 이 명령어를 다시 입력해야 합니다.
+
+만약 여러 프로젝트를 진행하고 있어서, 프로젝트마다 다른 사용자 이름과 이메일 주소를 사용하고 싶으면 -global 옵션을 빼고 명령을 실행할 수 있습니다.
+
+**에디터**
+
+Git에서 커밋 메시지를 기록할 때, 특히 merge commit 확인 메시지가 나올 때 텍스트 에디터가 열립니다. 기본값으로 텍스트 에디터 vi가 열리는데, vi 에 익숙하지 않다면, nano로 변경 가능합니다.
+```shell
+git config --global core.editor nano
+```
+### 2.2. SSH 등록
+
+**SSH 키 생성** : ssh 키는 비대칭키로 구성되며, 두 개의 키가 서로 대칭이 되지 않는 형태로 존재합니다. 다음의 명령어  `ssh-keygen`를 프롬프트에 입력하고, ssh 키 페어(쌍)을 생성하세요. 명령어를 입력 후 Enter 키를 몇 번 입력하면, ssh 키 페어가 생성됩니다.
+
+**공개키 복사** : 다음의 명령어`cat ~/.ssh/id_rsa.pub`를 프롬프트에 입력하여, 공개키를 복사합니다.
+
+- 마우스 우클릭 -> 복사(copy)
+- Linux: Ctrl + Shift + C
+- macOS: Command + C
+
+
+**Github에 공개키 등록**
+
+1. 브라우저에서 Github로 이동하여 로그인합니다. 우측 상단의 프로필 이미지를 클릭하고, Settings 에 진입
+2. 왼쪽의 내비게이션에서 `SSH and GPG keys` 선택
+3. 나타난 화면에서 SSH Keys 옆의 초록색 버튼 `New SSH Key` 클릭
+4. 등록한 SSH 공개키를 구분할 수 있도록 사용자 임의로 Title을 작성, Key에는 복사해둔 공개키를 붙여 넣고, Add SSH Key 버튼을 클릭
+5. Confirm access에서 Github 로그인에 필요한 비밀번호를 입력해 SSH key 등록을 승인
 
 ## 3. Git Workflow
 
-1. Remote에 있는 다른 Repository에서 Fork를 해서 Remote에 있는 내 Repository에 가지고 옵니다.
-2. 그리고 이 코드를 수정하기 위해서는 내 컴퓨터로 가져오는 작업이 또 필요합니다. 내 컴퓨터에서 작업을 하기 위해서 clone을 합니다.
-3. 이제 내 컴퓨터의 작업 공간 (work space) 에서 작업에 들어간 파일들을 git의 관리하에 있는 상태로 올려줄 수 있습니다. 이 영역을 staging area라고 말합니다. 즉, staging area에 들어오지 않은 파일은 unstaged 혹은 untracked file이라고 말하며, staging area에 있는 파일들은 staged 된 파일이라고 말할 수 있어요. 이 부분에 대해서는 나중에 더 자세하게 알아봅시다.
+### 3.1 Git의 영역과 기본 명령어
 
-4. staging area에 들어온 파일들은 commit이 가능합니다. commit을 하고 나면 내 remote repository에 push 해서 commit 기록을 remote 에도 남겨줄 수 있습니다.
+- 온라인 : Remote repository(원격 저장소)
+- 로컬 : Work space(작업 공간), Staging area(스테이징 영역), Local repository(지역 저장소)
 
-5. push를 완료한 후 이제 remote의 원래 레파지토리에 pull request를 보내면 Remote Repository로 내가 수정한 코드를 업로드할 수 있습니다.
 
-이 그림이 이번 강의의 전체적인 그림이기 때문에 지금은 이런 순서대로 진행이 된다는 것만 알아두시면 workflow를 이해하기 수월하실 거예요.
-강의를 다 듣고 다시 한번 이 그림을 살펴보며 복습해 보세요!
+Git으로 파일 관리를 시작하기(Git 초기화) : `git init`
 
+**.git 디렉토리** : `ls -al`
 
-# **Basic**
+git init을 입력하면 디렉토리 내에 .git 디렉토리가 생성됩니다. 디렉토리나 파일 이름의 맨 앞에 .이 붙으면 해당 디렉토리 또는 파일이 숨김 처리되어 일반적인 ls 명령어로는 확인할 수 없습니다. 하지만 ls 명령어의 옵션으로 -a 를 붙여주면 숨김 처리된 디렉토리 및 파일을 확인할 수 있습니다.
 
-# **HELP**
+**Work space** : Git의 세 가지 영역 중 하나로, Working tree 또는 Work tree라고도 하며, 눈으로 볼 수 있는 디렉토리 자체를 의미합니다.
 
-**$ git 명령어 --help**
+Git은 Work space를 자동으로 스캔합니다. Git이 Work space를 스캔하다가 무언가 변경된 사항을 발견하면 사용자에게 해당 사항을 알려주고, 어떤 행위를 취해야 하는지 적절한 명령어 및 동작을 알려줍니다.
 
-명령어에 대한 설명을 자세히 볼 수 있다.
+**파일들의 상태를 확인하기** : `git status`
 
-# **기본설정**
+파일의 상태
+- Untracked: Git에 의해 파일의 상태가 추적되고 있지 않은 상태
+- Tracked: 파일의 상태가 추적되고 있는 상태
+  - Unmodified : 파일의 수정이 Git에 의해 감지되지 않은 상태
+  - Modified : 파일의 수정이 Git에 의해 감지된 상태
+  - Staged : 파일이 Staging area에 존재하는 상태
 
-**$ git config**
+**Staging area**
 
-git의 기본설정을 변경할 수 있다.
+Local repository에 저장할 파일들이 임시적으로 대기하는 영역을 의미합니다. 일반적으로 Git을 활용하여 작업을 할 때에는 Work space에서 작업을 마친 파일을 Staging area로 옮겨서 모아두고, 추후 어느 정도의 단위 작업이 끝나면 Staging area에 모인 파일들을 한 번에 Local repository로 저장합니다.
 
-**git config --global user.name "이름"**
+Local repository에 파일을 저장하는 것은 단순히 파일을 저장하는 것 이외의 특별한 의미를 가집니다. 따라서 Local repository에 파일들을 저장하기 전에 임시적으로 파일들을 모아둘 영역이 필요한데, 이것이 바로 Staging area입니다.
 
-**git config --global user.email "이메일주소"**
+**Staging area로 파일을 이동시키기** : `git add`
 
-각각의 버전은 누가 만든것인지 정보를 가지고 있어야하는데 위와 같이 username과 email을 설정할 수 있다. (`railsinstaller`설치 후 처음 입력한 정보!)
+특정 파일을 Staging area로 이동시킬 때에는 git add 파일_이름 명령어를 사용하면 됩니다. git add를 사용하면 파일이 Staging area로 이동하므로, `파일을 스테이징한다`고 표현하기도 합니다.
 
-# **새로운 저장소 만들기**
+`git add .`를 입력하면 현재 디렉토리 내의 모든 파일이 스테이징됩니다.
 
-모든것은 **init**으로 부터 시작된다.
+**파일을 Local repository에 저장하고 버전을 기록하기** : `git commit`
 
-**$ git init**
+git add를 통해 스테이징까지 마쳤다면, Commit을 할 수 있습니다. Commit이란, Local repository에 파일을 저장하는 행위를 가리키며, 파일을 Local repository에 저장함과 동시에 파일의 버전을 기록합니다.
 
-**Initialized empty Git repository in /Users/dh0023/gittest/.git/**
+```shell
+git commit -m "First commit"
+```
 
-****
+**Commit 내역 확인** : `git log`
 
-**$ ls -al**
+git log를 입력하면 터미널 내에 별도의 창이 열립니다. `q`를 입력하여 빠져나올 수 있습니다.
 
-**total 0**
+**작업물을 Remote repository로 업로드하기** : `git push`
 
-**drwxr-xr-x   3 dh0023  staff   102  3 23 17:08 .**
+```shell
+git push 원격_저장소_별칭 브랜치_이름 # origin main
+```
 
-**drwxr-xr-x+ 34 dh0023  staff  1156  3 23 17:08 ..**
+1. Remote repository 만들기
+2. Remote repository와 Local repository를 연결하기
+3. 업로드하기
 
-**drwxr-xr-x  10 dh0023  staff   340  3 23 17:08 .git**
 
-`git init`을 하면 현재 디렉토리가 **버전관리의 저장소**가 되었다는 의미이다.
+Remote Repository의 코드를 로컬로 복사해오기 : `git clone
 
-`ls -al`을 하면 `.git` directory(폴더)가 생긴 것을 볼 수 있다.`.git` 폴더 안에서 버전관리가 이루어진다.
+```shell
+git clone 복사한_URL
+```
+### 3.2. GitHub workflow
 
-# **상태확인하기**
+1. Remote에 있는 다른 Repository에서 `fork`를 해서 Remote에 있는 내 Repository에 가지고 옵니다.
+2. 이 코드를 수정하기 위해서는 내 컴퓨터로 가져오는 작업이 또 필요합니다. 내 컴퓨터에서 작업을 하기 위해서 `clone`을 합니다.
+3. 이제 내 컴퓨터의 작업 공간(work space) 에서 작업에 들어간 파일들을 git의 관리하에 있는 상태로 올려줄 수 있습니다. 이 영역을 staging area라고 말합니다. 즉, staging area에 들어오지 않은 파일은 unstaged 혹은 untracked file이라고 말하며, staging area에 있는 파일들은 staged 된 파일이라고 말할 수 있습니다.
+4. staging area에 들어온 파일들은 `commit`이 가능합니다. commit을 하고 나면 내 remote repository에 `push` 해서 commit 기록을 remote 에도 남겨줄 수 있습니다.
+5. push를 완료한 후 이제 remote의 원래 레파지토리에 `pull request`를 보내면 Remote Repository로 내가 수정한 코드를 업로드할 수 있습니다.
 
-**$ git status**
+## Reference
 
-**On branch master**
-
-****
-
-**Initial commit**
-
-****
-
-**Untracked files:**
-
-**(use "git add <file>..." to include in what will be committed)**
-
-****
-
-**test1.html**
-
-- -------------------------
-
-****
-
-**Changes to be committed:**
-
-**(use "git rm --cached <file>..." to unstage)**
-
-****
-
-**new file:   test1.html**
-
-**untracked files:**은 버전관리가 되지않고 있는 파일로서 새로 추가, 수정, 삭제 즉 변경된 파일이다. 버전관리가 되지않고 있는 파일,폴더는 **붉은색**으로 표시 된다.
-
-**new file:**은 버전관리에 새로 추가된 파일이며, **초록색**으로 표시된다.(`git add`명령어를 통해 추가)
-
-# **추가**
-
-**$ git add 파일(폴더)명**
-
-**$ git add test1.html**
-
-****
-
-**$ git add .**
-
-버전관리 목록에 추가해 주는 것이다.
-
-`git add .`은 변경된 모든 사항을 추가한다는 의미
-
-`add`명령어 후 `git status`를 해보면 **changed to be Committed:** 파일이 버전관리 되고 있는 것을 확인 할 수 있다.
-
-# **확정**
-
-**$ git commit -m "first commit"**
-
-**[master (root-commit) dc423a2] first commit**
-
-**1 file changed, 1 insertion(+)**
-
-**create mode 100644 test1.html**
-
-이때까지 변경된 것을 **확정**하는 것이다. `""`안에는 버전에 대한 설명을 간단히 적어준다.
-
-**$ git commit --amend**
-
-**[master c6ce442] first commit**
-
-**Date: Thu Mar 23 17:28:55 2017 +0900**
-
-**1 file changed, 1 insertion(+)**
-
-**create mode 100644 test1.html**
-
-**추가적인 설명**을 자세하게 적을 수 있다.
-
-![https://3827551924-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M26jG1uJ-xuMP0XPOri%2F-M28eYY8Gfew1RKJ2YsW%2F-M28e_H5I1HEWQwMbomv%2F735.png?generation=1583931351997064&alt=media](https://3827551924-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M26jG1uJ-xuMP0XPOri%2F-M28eYY8Gfew1RKJ2YsW%2F-M28e_H5I1HEWQwMbomv%2F735.png?generation=1583931351997064&alt=media)
-
-# **서버에 올리기**
-
-현재의 변경 내용은 아직 로컬 저장소의 HEAD 안에 머물고 있다. push명령어 이후에 변경내용이 서버에 적용된다.
-
-`git push [리모트 저장소 이름] [브랜치 이름]`
-
-master 브랜치를 origin 서버에 올리려면 아래와 같이 하면된다.
-
-**$ git push origin master**
-
-# **저장소 받아오기**
-
-**$ git clone /로컬/저장소/경로**
-
-특정 브랜치로 저장소를 받아오고 싶으면 아래와 같이 옵션을 주면 된다.
-
-**$ git clone -b {branch_name} --single-branch {repository_url}**
-
-# **취소**
-
-**$ git reset [돌아갈 버전]**
-
-**$ git reset HEAD~1**
-
-Reset은 **선택한 버전의 상태로 돌아가는 것, 버전을 지워버림**
-
-![https://3827551924-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M26jG1uJ-xuMP0XPOri%2Fsync%2F6d37465b87c360e7b674a55dd5a2e23bb2a3dcbf.png](https://3827551924-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M26jG1uJ-xuMP0XPOri%2Fsync%2F6d37465b87c360e7b674a55dd5a2e23bb2a3dcbf.png)
-
-https://res.cloudinary.com/practicaldev/image/fetch/s--vtdH0y_D--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://storage.kraken.io/kk8yWPxzXVfBD3654oMN/f0ae16e339631560090233b4c5850990/git-reset.png
-
-**$ git revert [돌아갈 버전]**
-
-**$ git revert HEAD ~1**
-
-Revert는 **선택한 버전을 취소해서 그 이전 상태로 돌리는것**
-
-![https://3827551924-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M26jG1uJ-xuMP0XPOri%2F-M28eYY8Gfew1RKJ2YsW%2F-M28e_H9XSdNw2UGT4ar%2Fgit-revert.png](https://3827551924-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M26jG1uJ-xuMP0XPOri%2F-M28eYY8Gfew1RKJ2YsW%2F-M28e_H9XSdNw2UGT4ar%2Fgit-revert.png)
-
-https://res.cloudinary.com/practicaldev/image/fetch/s--jatxl5-W--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://storage.kraken.io/kk8yWPxzXVfBD3654oMN/782bf25d88e360df15ef96d84d872181/git-revert.png
-
-`revert` 와 `reverse` 를 할때는 항상 주의해야한다.
-
-# **Branch 생성하기**
-
-branch는 안전하게 격리된 상태에서 무언가를 만들 때 사용.
-
-**$ git branch**
-
-- master
-
-저장소를 새로 만들면 **master** branch(default)가 기본이다.
-
-**$ git branch <브랜치명>**
-
-**$ git branch exp**
-
-**$ git branch**
-
-**exp**
-
-- master
-
-실험적인 작업을 해야하는경우나 **협업**을 할 때 사용. exp branch가 생성된 것을 확인할 수 있다. *붙은 것이 현재 branch
-
-이전 commit으로 branch를 생성
-
-**$ git branch <브랜치명> [특정 버전]**
-
-**$ git branch example 9da3066404c68a4e7f77a7ddb69beb4d2475e2dd**
-
-해당 commit에서 브랜치가 생성된다.
+[Git 최초 설정](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95)
 
 [git log에 대해 알아보기](https://dahye-jeong.gitbook.io/til/git/2019-01-09-git-log)
 
-# **현재 Branch변경**
-
-**$ git checkout exp**
-
-- exp
-
-**master**
-
-현재 branch가 *exp로 바뀐것을 확인 할 수 있다.
-
-**$ git checkout -t origin/exp**
-
-remote에 있는 branch를 가져와 로컬에 동일한 이름의 브랜치를 생성하면서 해당 branch로 checkout하는 옵션이다.
-
-**$ git branch**
-
-- exp
-
-**master**
-
-# **Branch 생성과 동시에 변경하기**
-
-**$ git checkout -b <브랜치명>**
-
-**$ git checkout -b example1**
-
-**$ git branch**
-
-- example1
-
-**master**
-
-# **데이터 가져오기(fetch)**
-
-fetch는 단순히 원격 저장소의 내용을 확인만 하고 로컬 데이터와 병합은 하고 싶지 않은 경우에 사용한다.
-
-**$ git fetch [remote-name]**
-
-즉, local에는 없지만 remote 저장소에 있는 모든 데이터를 가져온다.
-
-# **Branch 병합**
-
-**$ git merge <branch명>**
-
-branch를 이용해 병합을 하면 git이 자동으로 commit을 해준다.
-
-**$ git branch**
-
-**example1**
-
-- master
-
-****
-
-**$ git merge example1**
-
-# **Merge --squash**
-
-병합할 branch의 모든 commit을 하나로 합치고 싶을때 `--squash` 옵션을 지정하면된다.
-
-**$ git merge --squash <branch명>**
-
-**$ git merge --squash example1**
-
-# **갱신(pull)**
-
-**$ git pull**
-
-원격 저장소의 변경 내용이 로컬 작업 디렉토리에 받아지고(fetch), 병합(merge)된다.
-
-# **충돌(conflict)**
-
-만약에 여러개의 branch가 서로 같은 것을 수정할 경우에 깃은 충돌을 나타내고 우리가 수정할 수 있도록 표시해준다.
-
-# **협업**
-
-어떠한 작업을 하기전에 pull을 하는 것이 가장 좋다! **`pull`->working->`commit`->`pull`->`push`**
-
-# **stash**
-
-아직 commit하지 않은 버전을 임시로 저장하는 것! stash를 하면 임시로 저장된 후 마지막 버전상태로 돌아가고 삭제된다.
-
-# **tag(github에선 releases)**
-
-설명해주는 것! 과거의 특정한 버전에 대해서도 태그를 붙일 수 있다.
-
-# **ignore**
-
-`.gitignore`파일에 파일을 추가하면 git이 없는걸로 간주할 대상이 된다.(github에 올릴때도 안올라감!) [ignore에 포함되어야할 목록](https://www.gitignore.io/)
-
-이 때 중요한 id, 비밀번호, key값이 설정된 파일은 따로 저장한 후 `.gitignore`에 추가해 원격저장소에 올리지 않는다.
-
+[ignore에 포함되어야할 목록](https://www.gitignore.io/)
 
 ## 🔥 데일리 회고 - 점검 및 평가
 
@@ -462,3 +272,4 @@ git, github
 페어와 함께했지만 주말에 다시 해보기로 함
 
 ✅ **나의 오늘 학습 만족도는 몇점인가요?** 🌑🌘🌗🌖🌕  **→**  🌖
+
