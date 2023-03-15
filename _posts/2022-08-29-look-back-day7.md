@@ -230,7 +230,7 @@ git push 원격_저장소_별칭 브랜치_이름 # origin main
 3. 업로드하기
 
 
-Remote Repository의 코드를 로컬로 복사해오기 : `git clone
+Remote Repository의 코드를 로컬로 복사해오기 : `git clone`
 
 ```shell
 git clone 복사한_URL
