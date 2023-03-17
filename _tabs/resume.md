@@ -153,7 +153,7 @@ e-Biz/대리
 
 2022.08 - 2023.02
 
-Backend software engineering, K-Digital training (41기)
+**Backend software engineering, K-Digital training (41기)**
 
 - Java, 데이터베이스, Spring Core, Spring MVC, Spring Security, Cloud  과정 학습
 - 페어 프로그래밍과 코드 리뷰 경험
@@ -165,18 +165,16 @@ Backend software engineering, K-Digital training (41기)
 
 2020.01 - 2018.01
 
-Advanced Diploma of Marketing and Communication
-
-Diploma of Marketing and Communication
-
-Certificate IV in Marketing and Communication
+- Advanced Diploma of Marketing and Communication
+- Diploma of Marketing and Communication
+- Certificate IV in Marketing and Communication
 
 
 ### 한양여자대학교
 
 2004.03 - 2006.2
 
-실무 영어 전공
+**실무 영어 전공**
 
 
 ---
